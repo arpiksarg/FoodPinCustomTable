@@ -49,12 +49,8 @@ class RestaurantTableViewController: UITableViewController {
         
         // checking if restaurant is visited.
         // If it is also change accessoryType property to prevent the bug
-        
-        if restaurantIsVisited[indexPath.row] {
-            cell.accessoryType = .checkmark
-        } else {
-            cell.accessoryType = .none
-        }
+    
+        cell.accessoryType = restaurantIsVisited[indexPath.row] ? .checkmark : .none
         
         return cell
     }
