@@ -22,7 +22,8 @@ class RestaurantTableViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        tableView.cellLayoutMarginsFollowReadableWidth = true
     }
     
     // MARK: - Table view data source
@@ -34,7 +35,27 @@ class RestaurantTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return restaurantNames.count
     }
-
+    
+    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+        
+        if editingStyle == .delete {
+            restaurantNames.remove(at: indexPath.row)
+            restaurantLocations.remove(at: indexPath.row)
+            restaurantTypes.remove(at: indexPath.row)
+            restaurantIsVisited.remove(at: indexPath.row)
+            restaurantImages.remove(at: indexPath.row)
+            
+        }
+        
+        //tableView.reloadData()
+        tableView.deleteRows(at: [indexPath], with: .fade)
+        
+        print("Total item: \(restaurantNames.count)")
+        for name in restaurantNames {
+            print(name)
+        }
+    }
+    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         let cellIdentifier = "datacell"
@@ -64,8 +85,16 @@ class RestaurantTableViewController: UITableViewController {
                                          handler: nil )
         optionMenu.addAction(cancelAction)
     
-        present(optionMenu, animated: true, completion: nil)
+        //present(optionMenu, animated: true, completion: nil)
         
+        if let popoverController = optionMenu.popoverPresentationController {
+            if let cell = tableView.cellForRow(at: indexPath)
+            {
+                popoverController.sourceView = cell
+                popoverController.sourceRect = cell.bounds
+            }
+        }
+    
         let callActionHandler = {
             (action: UIAlertAction!) -> Void in
             let alertMessage = UIAlertController(title: "Service Unavailable",
@@ -78,29 +107,36 @@ class RestaurantTableViewController: UITableViewController {
             self.present(alertMessage, animated: true, completion: nil)
         }
         
-        let callAction = UIAlertAction(title: "Call" + "123-000-\(indexPath.row)",
+        let callAction = UIAlertAction(title: "Call" + "123-000-\(indexPath.row + 1)",
                                        style: .default,
                                        handler: callActionHandler)
         
         optionMenu.addAction(callAction)
         
+        let checkActionTitle = (restaurantIsVisited[indexPath.row]) ? "Undo Check in" : "Check in"
+
         // Check in action
         
-        let checkInAction = UIAlertAction(title: "Check in",
+        let checkInActionHandler = { (action:UIAlertAction!) -> Void in
+            
+            let cell = tableView.cellForRow(at: indexPath) as! RestaurantTableViewCell
+            self.restaurantIsVisited[indexPath.row] = !self.restaurantIsVisited[indexPath.row]
+//
+//            cell.accessoryType = (self.restaurantIsVisited[indexPath.row]) ? .checkmark : .none
+            
+            cell.heartImage.isHidden = self.restaurantIsVisited[indexPath.row] ? false : true
+            
+        }
+
+        let checkInAction = UIAlertAction(title: checkActionTitle,
                                           style: .default,
-                                          handler: { (action:UIAlertAction!) -> Void in
-                                            
-                                          let cell = tableView.cellForRow(at: indexPath)
-                                          cell?.accessoryType = .checkmark
-                                            
-                                          self.restaurantIsVisited[indexPath.row] = true
-        })
-        
-        
+                                          handler: checkInActionHandler)
+    
+        optionMenu.addAction(checkInAction)
         
         // Display the menu
         
-        optionMenu.addAction(checkInAction)
+        present(optionMenu, animated: true, completion: nil)
         
         // Deselect the row
         
