@@ -35,25 +35,40 @@ class RestaurantTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return restaurantNames.count
     }
-    
-    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+
+    override func tableView(_ tableView: UITableView, trailingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
         
-        if editingStyle == .delete {
-            restaurantNames.remove(at: indexPath.row)
-            restaurantLocations.remove(at: indexPath.row)
-            restaurantTypes.remove(at: indexPath.row)
-            restaurantIsVisited.remove(at: indexPath.row)
-            restaurantImages.remove(at: indexPath.row)
+        let deleteAction = UIContextualAction(style: .destructive, title: "Delete") { (action, sourceView, completionHandler) in
+            
+            // Delete the row from the data source
+            
+            self.restaurantNames.remove(at: indexPath.row)
+            self.restaurantLocations.remove(at: indexPath.row)
+            self.restaurantTypes.remove(at: indexPath.row)
+            self.restaurantIsVisited.remove(at: indexPath.row)
+            self.restaurantImages.remove(at: indexPath.row)
+            
+            self.tableView.deleteRows(at: [indexPath], with: .fade)
+            
+            // Call completion handler to dismiss the action button
+            
+            completionHandler(true)
+        }
+        
+        let shareAction = UIContextualAction(style: .normal, title: "Share") { (action, sourceView, completionHandler) in
+            
+            let defaultText = "Just checking in at " + self.restaurantNames[indexPath.row]
+            let activityController = UIActivityViewController(activityItems: [defaultText], applicationActivities: nil)
+            
+            self.present(activityController, animated: true, completion: nil)
+            
+            completionHandler(true)
             
         }
         
-        //tableView.reloadData()
-        tableView.deleteRows(at: [indexPath], with: .fade)
+        let swipeConfiguration = UISwipeActionsConfiguration(actions: [deleteAction, shareAction])
         
-        print("Total item: \(restaurantNames.count)")
-        for name in restaurantNames {
-            print(name)
-        }
+        return swipeConfiguration
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
