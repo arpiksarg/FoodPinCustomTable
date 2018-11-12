@@ -86,13 +86,38 @@ class RestaurantTableViewController: UITableViewController {
             self.present(activityController, animated: true, completion: nil)
             
             completionHandler(true)
-            
+    
         }
         
         shareAction.backgroundColor = UIColor(red: 254.0/255.0, green: 149.0/255.0, blue: 38.0/255.0, alpha: 1.0)
         shareAction.image = UIImage(named: "share")
         
         let swipeConfiguration = UISwipeActionsConfiguration(actions: [deleteAction, shareAction])
+        
+        
+        return swipeConfiguration
+    }
+    
+    //Exercise #1
+    
+    override func tableView(_ tableView: UITableView, leadingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
+        let selectRowAction = UIContextualAction(style: .normal, title: "select") {
+            (action, sourceView, completionHandler) in
+            let cell = tableView.cellForRow(at: indexPath) as! RestaurantTableViewCell
+            self.restaurantIsVisited[indexPath.row] = !self.restaurantIsVisited[indexPath.row]
+           
+            cell.heartImage.isHidden = self.restaurantIsVisited[indexPath.row] ? false : true
+            
+            completionHandler(true)
+            
+        }
+        
+        let checkIcon = restaurantIsVisited[indexPath.row] ? "undo" : "tick"
+        
+        selectRowAction.backgroundColor = UIColor.green
+        selectRowAction.image = UIImage(named: checkIcon)
+        
+        let swipeConfiguration = UISwipeActionsConfiguration(actions: [selectRowAction])
         
         return swipeConfiguration
     }
