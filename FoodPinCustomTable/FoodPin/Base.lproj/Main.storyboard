@@ -104,11 +104,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Lsu-Z5-rYV">
+                            <imageView userInteractionEnabled="NO" contentMode="top" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Lsu-Z5-rYV">
                                 <rect key="frame" x="0.0" y="64" width="320" height="504"/>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="top" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="FVk-t4-za2">
-                                <rect key="frame" x="20" y="404" width="300" height="101.5"/>
+                                <rect key="frame" x="20" y="404" width="280" height="101.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nLw-df-m60">
                                         <rect key="frame" x="0.0" y="0.0" width="56.5" height="30.5"/>
@@ -129,13 +129,14 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </stackView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="FVk-t4-za2" firstAttribute="leading" secondItem="Dhn-Yo-oji" secondAttribute="leading" constant="20" id="F0T-rr-iUg"/>
                             <constraint firstItem="Dhn-Yo-oji" firstAttribute="bottom" secondItem="Lsu-Z5-rYV" secondAttribute="bottom" id="IIJ-D6-AEm"/>
-                            <constraint firstItem="Dhn-Yo-oji" firstAttribute="trailing" secondItem="FVk-t4-za2" secondAttribute="trailing" id="Qq4-Y2-zhr"/>
+                            <constraint firstItem="Dhn-Yo-oji" firstAttribute="trailing" secondItem="FVk-t4-za2" secondAttribute="trailing" constant="20" id="Qq4-Y2-zhr"/>
                             <constraint firstItem="Lsu-Z5-rYV" firstAttribute="leading" secondItem="Dhn-Yo-oji" secondAttribute="leading" id="Xef-TC-Zfp"/>
                             <constraint firstItem="FVk-t4-za2" firstAttribute="top" secondItem="Dhn-Yo-oji" secondAttribute="top" constant="340" id="ZI9-6y-jIk"/>
                             <constraint firstItem="Dhn-Yo-oji" firstAttribute="bottom" secondItem="FVk-t4-za2" secondAttribute="bottom" constant="62.5" id="p9S-d4-5sB"/>
