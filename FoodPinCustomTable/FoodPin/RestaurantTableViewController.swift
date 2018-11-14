@@ -33,7 +33,7 @@ class RestaurantTableViewController: UITableViewController {
         Restaurant(name: "Royal Oak", type: "British", location: "London", image: "royaloak", isVisited: false),
         Restaurant(name: "CASK Pub and Kitchen", type: "Thai", location: "London", image: "caskpubkitchen", isVisited: false)
     ]
-        
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -48,7 +48,7 @@ class RestaurantTableViewController: UITableViewController {
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return restaurantNames.count
+        return restaurants.count
     }
 
     override func tableView(_ tableView: UITableView, trailingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
