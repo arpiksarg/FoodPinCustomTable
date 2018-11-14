@@ -57,12 +57,12 @@ class RestaurantTableViewController: UITableViewController {
             
             // Delete the row from the data source
             
-            self.restaurantNames.remove(at: indexPath.row)
-            self.restaurantLocations.remove(at: indexPath.row)
-            self.restaurantTypes.remove(at: indexPath.row)
-            self.restaurantIsVisited.remove(at: indexPath.row)
-            self.restaurantImages.remove(at: indexPath.row)
-            
+            self.restaurants.remove(at: indexPath.row)
+//            self.restaurantLocations.remove(at: indexPath.row)
+//            self.restaurantTypes.remove(at: indexPath.row)
+//            self.restaurantIsVisited.remove(at: indexPath.row)
+//            self.restaurantImages.remove(at: indexPath.row)
+//
             self.tableView.deleteRows(at: [indexPath], with: .fade)
             
             // Call completion handler to dismiss the action button
@@ -75,10 +75,10 @@ class RestaurantTableViewController: UITableViewController {
         
         let shareAction = UIContextualAction(style: .normal, title: "Share") { (action, sourceView, completionHandler) in
             
-            let defaultText = "Just checking in at " + self.restaurantNames[indexPath.row]
+            let defaultText = "Just checking in at " + self.restaurants[indexPath.row].name
             let activityController: UIActivityViewController
             
-            if let imageToShare = UIImage(named: self.restaurantImages[indexPath.row]) {
+            if let imageToShare = UIImage(named: self.restaurants[indexPath.row].image) {
                 
                 activityController = UIActivityViewController(activityItems: [defaultText, imageToShare], applicationActivities: nil)
             
@@ -119,15 +119,15 @@ class RestaurantTableViewController: UITableViewController {
         let selectRowAction = UIContextualAction(style: .normal, title: "select") {
             (action, sourceView, completionHandler) in
             let cell = tableView.cellForRow(at: indexPath) as! RestaurantTableViewCell
-            self.restaurantIsVisited[indexPath.row] = !self.restaurantIsVisited[indexPath.row]
+            self.restaurants[indexPath.row].isVisited = !self.restaurants[indexPath.row].isVisited
            
-            cell.heartImage.isHidden = self.restaurantIsVisited[indexPath.row] ? false : true
+            cell.heartImage.isHidden = (self.restaurants[indexPath.row].isVisited) ? false : true
             
             completionHandler(true)
             
         }
         
-        let checkIcon = restaurantIsVisited[indexPath.row] ? "undo" : "tick"
+        let checkIcon = restaurants[indexPath.row].isVisited ? "undo" : "tick"
         
         selectRowAction.backgroundColor = UIColor(red: 48.0/255.0, green: 150.0/255.0, blue: 50.0/255.0, alpha: 1.0)
         selectRowAction.image = UIImage(named: checkIcon)
@@ -144,16 +144,18 @@ class RestaurantTableViewController: UITableViewController {
         
         // Configure the cell...
         
-        cell.nameLabel.text = restaurantNames[indexPath.row]
-        cell.thumbnailImageView.image = UIImage(named: restaurantImages[indexPath.row])
-        cell.locationLabel.text = restaurantLocations[indexPath.row]
-        cell.typeLabel.text = restaurantTypes[indexPath.row]
+        cell.nameLabel.text = restaurants[indexPath.row].name
+        cell.thumbnailImageView.image = UIImage(named: restaurants[indexPath.row].image)
+        cell.locationLabel.text = restaurants[indexPath.row].location
+        cell.typeLabel.text = restaurants[indexPath.row].type
         
         // checking if restaurant is visited.
         // If it is also change accessoryType property to prevent the bug
     
-        cell.accessoryType = restaurantIsVisited[indexPath.row] ? .checkmark : .none
+       // cell.accessoryType = restaurantIsVisited[indexPath.row] ? .checkmark : .none
         
+        cell.heartImage.isHidden = restaurants[indexPath.row].isVisited ? false : true
+    
         return cell
     }
     
@@ -161,10 +163,7 @@ class RestaurantTableViewController: UITableViewController {
         if segue.identifier == "showRestaurantDetail" {
             if let indexPath = tableView.indexPathForSelectedRow {
                 let destinationController = segue.destination as! RestaurantDetailViewController
-                destinationController.restaurantImageName = restaurantImages[indexPath.row]
-                destinationController.restaurantName = restaurantNames[indexPath.row]
-                destinationController.restaurantType = restaurantTypes[indexPath.row]
-                destinationController.restaurantLocation = restaurantLocations[indexPath.row]
+                destinationController.restaurant = restaurants[indexPath.row]
             }
         }
     }
