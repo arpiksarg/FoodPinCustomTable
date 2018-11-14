@@ -20,7 +20,6 @@ class RestaurantTableViewCell: UITableViewCell {
         }
     }
     
- 
     @IBOutlet weak var heartImage: UIImageView!
     
     override func awakeFromNib() {

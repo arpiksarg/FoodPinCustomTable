@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E24A0746219AE3C100993E60 /* RestaurantDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E24A0745219AE3C100993E60 /* RestaurantDetailViewController.swift */; };
 		F44705AE211AF99E002E0327 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F44705AD211AF99E002E0327 /* AppDelegate.swift */; };
 		F44705B3211AF99E002E0327 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F44705B1211AF99E002E0327 /* Main.storyboard */; };
 		F44705B5211AF99F002E0327 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F44705B4211AF99F002E0327 /* Assets.xcassets */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E24A0745219AE3C100993E60 /* RestaurantDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantDetailViewController.swift; sourceTree = "<group>"; };
 		F44705AA211AF99E002E0327 /* FoodPin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FoodPin.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F44705AD211AF99E002E0327 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F44705B2211AF99E002E0327 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -63,6 +65,7 @@
 				F44705B9211AF99F002E0327 /* Info.plist */,
 				F44705BF211AFFE1002E0327 /* RestaurantTableViewController.swift */,
 				F463DF77211D35A600F73F88 /* RestaurantTableViewCell.swift */,
+				E24A0745219AE3C100993E60 /* RestaurantDetailViewController.swift */,
 			);
 			path = FoodPin;
 			sourceTree = "<group>";
@@ -140,6 +143,7 @@
 			files = (
 				F44705C0211AFFE1002E0327 /* RestaurantTableViewController.swift in Sources */,
 				F463DF78211D35A600F73F88 /* RestaurantTableViewCell.swift in Sources */,
+				E24A0746219AE3C100993E60 /* RestaurantDetailViewController.swift in Sources */,
 				F44705AE211AF99E002E0327 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -294,7 +298,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.arp.FoodPin;
+				PRODUCT_BUNDLE_IDENTIFIER = com.xamlab.FoodPin;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.2;
@@ -314,7 +318,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.arp.FoodPin;
+				PRODUCT_BUNDLE_IDENTIFIER = com.xamlab.FoodPin;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.2;
