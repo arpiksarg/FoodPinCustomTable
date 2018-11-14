@@ -41,6 +41,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E2517627219C44FA00D89C52 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				F44705BF211AFFE1002E0327 /* RestaurantTableViewController.swift */,
+				E24A0745219AE3C100993E60 /* RestaurantDetailViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		E2517628219C459B00D89C52 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E2517624219C30E600D89C52 /* Restaurant.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		E2517629219C45B600D89C52 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F463DF77211D35A600F73F88 /* RestaurantTableViewCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		F44705A1211AF99D002E0327 = {
 			isa = PBXGroup;
 			children = (
@@ -60,15 +85,14 @@
 		F44705AC211AF99E002E0327 /* FoodPin */ = {
 			isa = PBXGroup;
 			children = (
+				E2517629219C45B600D89C52 /* View */,
+				E2517628219C459B00D89C52 /* Model */,
+				E2517627219C44FA00D89C52 /* Controller */,
 				F44705AD211AF99E002E0327 /* AppDelegate.swift */,
 				F44705B1211AF99E002E0327 /* Main.storyboard */,
 				F44705B4211AF99F002E0327 /* Assets.xcassets */,
 				F44705B6211AF99F002E0327 /* LaunchScreen.storyboard */,
 				F44705B9211AF99F002E0327 /* Info.plist */,
-				F44705BF211AFFE1002E0327 /* RestaurantTableViewController.swift */,
-				F463DF77211D35A600F73F88 /* RestaurantTableViewCell.swift */,
-				E24A0745219AE3C100993E60 /* RestaurantDetailViewController.swift */,
-				E2517624219C30E600D89C52 /* Restaurant.swift */,
 			);
 			path = FoodPin;
 			sourceTree = "<group>";
