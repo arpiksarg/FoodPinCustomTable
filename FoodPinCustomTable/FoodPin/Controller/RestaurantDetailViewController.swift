@@ -19,12 +19,7 @@ class RestaurantDetailViewController: UIViewController {
    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        restaurantImageView.image = UIImage(named: restaurant.image)
-        restaurantNameLabel.text = restaurant.name
-        restaurantLocationLabel.text = restaurant.location
-        restaurantTypeLabel.text = restaurant.type
-        
+                
         navigationItem.largeTitleDisplayMode = .never
     }
 }
