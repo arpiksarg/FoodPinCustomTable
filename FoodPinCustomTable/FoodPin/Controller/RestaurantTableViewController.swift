@@ -34,6 +34,8 @@ class RestaurantTableViewController: UITableViewController {
         Restaurant(name: "CASK Pub and Kitchen", type: "Thai", location: "London", image: "caskpubkitchen", isVisited: false)
     ]
     
+    // MARK: - View controller life cycle
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -41,7 +43,7 @@ class RestaurantTableViewController: UITableViewController {
         navigationController?.navigationBar.prefersLargeTitles = true
     }
     
-    // MARK: - Table view data source
+    // MARK: - UITableViewDataSource Protocol
 
     override func numberOfSections(in tableView: UITableView) -> Int {
         return 1
@@ -58,11 +60,6 @@ class RestaurantTableViewController: UITableViewController {
             // Delete the row from the data source
             
             self.restaurants.remove(at: indexPath.row)
-//            self.restaurantLocations.remove(at: indexPath.row)
-//            self.restaurantTypes.remove(at: indexPath.row)
-//            self.restaurantIsVisited.remove(at: indexPath.row)
-//            self.restaurantImages.remove(at: indexPath.row)
-//
             self.tableView.deleteRows(at: [indexPath], with: .fade)
             
             // Call completion handler to dismiss the action button
@@ -88,8 +85,6 @@ class RestaurantTableViewController: UITableViewController {
            
             }
             
-            //= UIActivityViewController(activityItems: [defaultText], applicationActivities: nil)
-            
             if let popoverController = activityController.popoverPresentationController {
                 if let cell = tableView.cellForRow(at: indexPath)
                 {
@@ -108,7 +103,6 @@ class RestaurantTableViewController: UITableViewController {
         shareAction.image = UIImage(named: "share")
         
         let swipeConfiguration = UISwipeActionsConfiguration(actions: [deleteAction, shareAction])
-        
         
         return swipeConfiguration
     }
@@ -152,8 +146,6 @@ class RestaurantTableViewController: UITableViewController {
         // checking if restaurant is visited.
         // If it is also change accessoryType property to prevent the bug
     
-       // cell.accessoryType = restaurantIsVisited[indexPath.row] ? .checkmark : .none
-        
         cell.heartImage.isHidden = restaurants[indexPath.row].isVisited ? false : true
     
         return cell

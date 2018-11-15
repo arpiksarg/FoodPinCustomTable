@@ -59,13 +59,16 @@
                                                     </subviews>
                                                 </stackView>
                                                 <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="heart-tick" translatesAutoresizingMaskIntoConstraints="NO" id="gXa-o7-xPZ">
-                                                    <rect key="frame" x="282" y="0.0" width="22" height="21"/>
+                                                    <rect key="frame" x="252" y="0.0" width="20" height="20"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="height" constant="21" id="4Y0-EC-rVB"/>
-                                                        <constraint firstAttribute="width" constant="22" id="On8-dG-7Ts"/>
+                                                        <constraint firstAttribute="height" constant="20" id="4Y0-EC-rVB"/>
+                                                        <constraint firstAttribute="width" constant="20" id="On8-dG-7Ts"/>
                                                     </constraints>
                                                 </imageView>
                                             </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="gXa-o7-xPZ" secondAttribute="trailing" constant="10" id="EbR-Vk-O1X"/>
+                                            </constraints>
                                         </stackView>
                                     </subviews>
                                     <constraints>

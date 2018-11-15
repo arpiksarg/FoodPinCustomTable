@@ -17,7 +17,6 @@ class RestaurantDetailViewController: UIViewController {
     
     var restaurant = Restaurant()
    
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         

@@ -66,6 +66,15 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		E251762A219D781300D89C52 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				F44705B1211AF99E002E0327 /* Main.storyboard */,
+				F44705B6211AF99F002E0327 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
 		F44705A1211AF99D002E0327 = {
 			isa = PBXGroup;
 			children = (
@@ -85,13 +94,12 @@
 		F44705AC211AF99E002E0327 /* FoodPin */ = {
 			isa = PBXGroup;
 			children = (
-				E2517629219C45B600D89C52 /* View */,
+				E251762A219D781300D89C52 /* Storyboard */,
 				E2517628219C459B00D89C52 /* Model */,
+				E2517629219C45B600D89C52 /* View */,
 				E2517627219C44FA00D89C52 /* Controller */,
 				F44705AD211AF99E002E0327 /* AppDelegate.swift */,
-				F44705B1211AF99E002E0327 /* Main.storyboard */,
 				F44705B4211AF99F002E0327 /* Assets.xcassets */,
-				F44705B6211AF99F002E0327 /* LaunchScreen.storyboard */,
 				F44705B9211AF99F002E0327 /* Info.plist */,
 			);
 			path = FoodPin;
