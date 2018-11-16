@@ -148,20 +148,28 @@
                                                 <constraint firstAttribute="width" constant="20" id="uCW-dh-v4y"/>
                                             </constraints>
                                         </imageView>
+                                        <view alpha="0.20000000000000001" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nyY-DZ-WuQ" userLabel="Dim View">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="350"/>
+                                            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </view>
                                     </subviews>
                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <constraints>
                                         <constraint firstAttribute="trailing" secondItem="cGK-pb-nZl" secondAttribute="trailing" id="1NK-93-FWd"/>
                                         <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="axY-ea-Ku8" secondAttribute="trailing" constant="50" id="65P-t8-UOS"/>
+                                        <constraint firstItem="nyY-DZ-WuQ" firstAttribute="leading" secondItem="0q4-fz-NAR" secondAttribute="leading" id="97d-2g-LVj"/>
                                         <constraint firstItem="cGK-pb-nZl" firstAttribute="leading" secondItem="0q4-fz-NAR" secondAttribute="leading" id="9Li-MI-x49"/>
+                                        <constraint firstItem="nyY-DZ-WuQ" firstAttribute="top" secondItem="0q4-fz-NAR" secondAttribute="top" id="HQH-KH-d8b"/>
                                         <constraint firstItem="cGK-pb-nZl" firstAttribute="top" secondItem="0q4-fz-NAR" secondAttribute="top" id="IlI-l1-PHk"/>
                                         <constraint firstItem="Gq5-Kj-DvI" firstAttribute="top" secondItem="8Pc-nW-Nk0" secondAttribute="top" id="LGg-ds-V57"/>
                                         <constraint firstAttribute="bottom" secondItem="8Pc-nW-Nk0" secondAttribute="bottom" constant="8" id="Mab-6Q-fuS"/>
                                         <constraint firstItem="axY-ea-Ku8" firstAttribute="leading" secondItem="8Pc-nW-Nk0" secondAttribute="leading" id="VL5-22-JhQ"/>
+                                        <constraint firstAttribute="trailing" secondItem="nyY-DZ-WuQ" secondAttribute="trailing" id="Z72-WT-WFx"/>
                                         <constraint firstAttribute="bottom" secondItem="cGK-pb-nZl" secondAttribute="bottom" id="a6s-wy-PIt"/>
                                         <constraint firstItem="8Pc-nW-Nk0" firstAttribute="leading" secondItem="0q4-fz-NAR" secondAttribute="leading" constant="14" id="hNT-2H-axa"/>
                                         <constraint firstItem="8Pc-nW-Nk0" firstAttribute="top" secondItem="axY-ea-Ku8" secondAttribute="bottom" constant="3" id="kbv-hJ-jmw"/>
                                         <constraint firstItem="Gq5-Kj-DvI" firstAttribute="centerY" secondItem="8Pc-nW-Nk0" secondAttribute="centerY" id="rPT-ij-RfU"/>
+                                        <constraint firstAttribute="bottom" secondItem="nyY-DZ-WuQ" secondAttribute="bottom" id="yCc-Zf-ZO1"/>
                                         <constraint firstItem="Gq5-Kj-DvI" firstAttribute="leading" secondItem="8Pc-nW-Nk0" secondAttribute="trailing" constant="14" id="zo8-4G-wQz"/>
                                     </constraints>
                                     <connections>
