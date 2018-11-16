@@ -143,9 +143,9 @@
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="heart-tick" translatesAutoresizingMaskIntoConstraints="NO" id="Gq5-Kj-DvI" userLabel="Heart Image View">
-                                            <rect key="frame" x="128" y="322" width="15" height="20"/>
+                                            <rect key="frame" x="128" y="322" width="20" height="20"/>
                                             <constraints>
-                                                <constraint firstAttribute="width" constant="15" id="uCW-dh-v4y"/>
+                                                <constraint firstAttribute="width" constant="20" id="uCW-dh-v4y"/>
                                             </constraints>
                                         </imageView>
                                     </subviews>
