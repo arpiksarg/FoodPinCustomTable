@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E223BEF8219D9F2B0021446F /* RestaurantDetailHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E223BEF7219D9F2B0021446F /* RestaurantDetailHeaderView.swift */; };
 		E24A0746219AE3C100993E60 /* RestaurantDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E24A0745219AE3C100993E60 /* RestaurantDetailViewController.swift */; };
 		E2517625219C30E600D89C52 /* Restaurant.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2517624219C30E600D89C52 /* Restaurant.swift */; };
 		E2517637219D80B000D89C52 /* Rubik-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E2517636219D7FD700D89C52 /* Rubik-Black.ttf */; };
@@ -28,6 +29,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E223BEF7219D9F2B0021446F /* RestaurantDetailHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantDetailHeaderView.swift; sourceTree = "<group>"; };
 		E24A0745219AE3C100993E60 /* RestaurantDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantDetailViewController.swift; sourceTree = "<group>"; };
 		E2517624219C30E600D89C52 /* Restaurant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Restaurant.swift; sourceTree = "<group>"; };
 		E251762D219D7FD700D89C52 /* Rubik-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Rubik-LightItalic.ttf"; path = "../../../../../Downloads/Rubik/Rubik-LightItalic.ttf"; sourceTree = "<group>"; };
@@ -147,6 +149,7 @@
 				F44705AD211AF99E002E0327 /* AppDelegate.swift */,
 				F44705B4211AF99F002E0327 /* Assets.xcassets */,
 				F44705B9211AF99F002E0327 /* Info.plist */,
+				E223BEF7219D9F2B0021446F /* RestaurantDetailHeaderView.swift */,
 			);
 			path = FoodPin;
 			sourceTree = "<group>";
@@ -232,6 +235,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E223BEF8219D9F2B0021446F /* RestaurantDetailHeaderView.swift in Sources */,
 				E2517625219C30E600D89C52 /* Restaurant.swift in Sources */,
 				F44705C0211AFFE1002E0327 /* RestaurantTableViewController.swift in Sources */,
 				F463DF78211D35A600F73F88 /* RestaurantTableViewCell.swift in Sources */,
