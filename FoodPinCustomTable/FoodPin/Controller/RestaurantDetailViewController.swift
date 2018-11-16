@@ -26,6 +26,9 @@ class RestaurantDetailViewController: UIViewController, UITableViewDataSource, U
         headerView.typeLabel.text = restaurant.type
         headerView.headerImageView.image = UIImage(named: restaurant.image)
         headerView.heartImageView.isHidden = (restaurant.isVisited) ? false : true
+        
+        tableView.delegate = self
+        tableView.dataSource = self
     }
     
     func numberOfSections(in tableView: UITableView) -> Int {
