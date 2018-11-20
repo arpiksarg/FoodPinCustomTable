@@ -145,6 +145,7 @@
                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="heart-tick" translatesAutoresizingMaskIntoConstraints="NO" id="Gq5-Kj-DvI" userLabel="Heart Image View">
                                             <rect key="frame" x="128" y="322" width="20" height="20"/>
                                             <constraints>
+                                                <constraint firstAttribute="height" constant="20" id="MxW-BM-y3u"/>
                                                 <constraint firstAttribute="width" constant="20" id="uCW-dh-v4y"/>
                                             </constraints>
                                         </imageView>
@@ -161,7 +162,6 @@
                                         <constraint firstItem="cGK-pb-nZl" firstAttribute="leading" secondItem="0q4-fz-NAR" secondAttribute="leading" id="9Li-MI-x49"/>
                                         <constraint firstItem="nyY-DZ-WuQ" firstAttribute="top" secondItem="0q4-fz-NAR" secondAttribute="top" id="HQH-KH-d8b"/>
                                         <constraint firstItem="cGK-pb-nZl" firstAttribute="top" secondItem="0q4-fz-NAR" secondAttribute="top" id="IlI-l1-PHk"/>
-                                        <constraint firstItem="Gq5-Kj-DvI" firstAttribute="top" secondItem="8Pc-nW-Nk0" secondAttribute="top" id="LGg-ds-V57"/>
                                         <constraint firstAttribute="bottom" secondItem="8Pc-nW-Nk0" secondAttribute="bottom" constant="8" id="Mab-6Q-fuS"/>
                                         <constraint firstItem="axY-ea-Ku8" firstAttribute="leading" secondItem="8Pc-nW-Nk0" secondAttribute="leading" id="VL5-22-JhQ"/>
                                         <constraint firstAttribute="trailing" secondItem="nyY-DZ-WuQ" secondAttribute="trailing" id="Z72-WT-WFx"/>

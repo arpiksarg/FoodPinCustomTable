@@ -29,6 +29,7 @@ class RestaurantDetailViewController: UIViewController, UITableViewDataSource, U
         
         tableView.delegate = self
         tableView.dataSource = self
+        tableView.separatorStyle = .none
     }
     
     func numberOfSections(in tableView: UITableView) -> Int {
