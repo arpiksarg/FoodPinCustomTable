@@ -47,6 +47,10 @@ class RestaurantDetailViewController: UIViewController, UITableViewDataSource, U
         navigationController?.setNavigationBarHidden(false, animated: true)
     }
     
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        return .lightContent
+    }
+    
     func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }
