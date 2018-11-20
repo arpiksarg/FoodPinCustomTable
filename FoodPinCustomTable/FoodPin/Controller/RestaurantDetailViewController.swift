@@ -36,7 +36,7 @@ class RestaurantDetailViewController: UIViewController, UITableViewDataSource, U
         //navigationController?.navigationBar.items?.first?.title = " "
         navigationController?.navigationBar.tintColor = .white
         
-        tableView.contentInsetAdjustmentBehavior = .never        
+        tableView.contentInsetAdjustmentBehavior = .never
     }
     
     func numberOfSections(in tableView: UITableView) -> Int {
