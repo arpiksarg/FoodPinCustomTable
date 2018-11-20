@@ -228,7 +228,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O53-UK-ioK">
-                                                    <rect key="frame" x="25" y="11" width="325" height="22"/>
+                                                    <rect key="frame" x="25" y="28" width="325" height="5"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
@@ -276,6 +276,9 @@
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
+                    <toolbar key="toolbar" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="wWC-na-0My">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </toolbar>
                     <connections>
                         <segue destination="hIK-7A-J43" kind="relationship" relationship="rootViewController" id="30p-Ad-gu3"/>
                     </connections>

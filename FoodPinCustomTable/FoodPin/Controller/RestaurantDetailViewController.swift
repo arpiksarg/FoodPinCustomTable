@@ -18,6 +18,8 @@ class RestaurantDetailViewController: UIViewController, UITableViewDataSource, U
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        navigationController?.hidesBarsOnSwipe = false
+        
         navigationItem.largeTitleDisplayMode = .never
         
         // Configure header view
@@ -37,6 +39,12 @@ class RestaurantDetailViewController: UIViewController, UITableViewDataSource, U
         navigationController?.navigationBar.tintColor = .white
         
         tableView.contentInsetAdjustmentBehavior = .never
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        navigationController?.hidesBarsOnSwipe = false
+        navigationController?.setNavigationBarHidden(false, animated: true)
     }
     
     func numberOfSections(in tableView: UITableView) -> Int {
