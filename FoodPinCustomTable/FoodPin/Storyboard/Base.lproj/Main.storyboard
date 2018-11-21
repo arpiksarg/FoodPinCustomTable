@@ -124,6 +124,10 @@
                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="cGK-pb-nZl" userLabel="Header Image View">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="350"/>
                                         </imageView>
+                                        <view alpha="0.20000000000000001" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nyY-DZ-WuQ" userLabel="Dim View">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="350"/>
+                                            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </view>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="axY-ea-Ku8" userLabel="Name Label">
                                             <rect key="frame" x="14" y="278" width="91.5" height="41"/>
                                             <fontDescription key="fontDescription" name="Rubik-Medium" family="Rubik" pointSize="35"/>
@@ -148,10 +152,6 @@
                                                 <constraint firstAttribute="width" constant="20" id="uCW-dh-v4y"/>
                                             </constraints>
                                         </imageView>
-                                        <view alpha="0.20000000000000001" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nyY-DZ-WuQ" userLabel="Dim View">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="350"/>
-                                            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        </view>
                                     </subviews>
                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <constraints>
@@ -225,7 +225,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O53-UK-ioK">
-                                                    <rect key="frame" x="25" y="28" width="325" height="5"/>
+                                                    <rect key="frame" x="25" y="12.5" width="325" height="20.5"/>
                                                     <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
@@ -234,7 +234,6 @@
                                             <constraints>
                                                 <constraint firstItem="O53-UK-ioK" firstAttribute="bottom" secondItem="oxb-9f-ZcL" secondAttribute="bottomMargin" id="fDj-TV-NMK"/>
                                                 <constraint firstAttribute="trailingMargin" secondItem="O53-UK-ioK" secondAttribute="trailing" constant="10" id="ilf-yk-3d0"/>
-                                                <constraint firstItem="O53-UK-ioK" firstAttribute="top" secondItem="oxb-9f-ZcL" secondAttribute="topMargin" id="nd5-iG-3Io"/>
                                                 <constraint firstItem="O53-UK-ioK" firstAttribute="leading" secondItem="oxb-9f-ZcL" secondAttribute="leadingMargin" constant="10" id="zTE-Wg-9XP"/>
                                             </constraints>
                                         </tableViewCellContentView>

@@ -37,6 +37,7 @@ class RestaurantDetailViewController: UIViewController, UITableViewDataSource, U
         navigationController?.navigationBar.shadowImage = UIImage()
         //navigationController?.navigationBar.items?.first?.title = " "
         navigationController?.navigationBar.tintColor = .white
+        navigationController?.hidesBarsOnSwipe = false
         
         tableView.contentInsetAdjustmentBehavior = .never
     }
