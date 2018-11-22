@@ -20,6 +20,8 @@
 		E251763E219D80B000D89C52 /* Rubik-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E2517635219D7FD700D89C52 /* Rubik-Medium.ttf */; };
 		E251763F219D80B000D89C52 /* Rubik-MediumItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E2517634219D7FD700D89C52 /* Rubik-MediumItalic.ttf */; };
 		E2517640219D80B000D89C52 /* Rubik-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E251762E219D7FD700D89C52 /* Rubik-Regular.ttf */; };
+		E2B2A68621A6C113005222C0 /* RestaurantDetailSeparatorCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2B2A68521A6C113005222C0 /* RestaurantDetailSeparatorCell.swift */; };
+		E2B2A68821A6C221005222C0 /* RestaurantDetailMapCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2B2A68721A6C221005222C0 /* RestaurantDetailMapCell.swift */; };
 		E2BF261B21A44A5900946387 /* UIColorExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2BF261A21A44A5900946387 /* UIColorExt.swift */; };
 		E2BF261D21A454EE00946387 /* NavigationControllerExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2BF261C21A454EE00946387 /* NavigationControllerExt.swift */; };
 		E2CEB7FA21A6B53C006B4947 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E2CEB7F921A6B53C006B4947 /* MapKit.framework */; };
@@ -47,6 +49,8 @@
 		E2517634219D7FD700D89C52 /* Rubik-MediumItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Rubik-MediumItalic.ttf"; path = "../../../../../Downloads/Rubik/Rubik-MediumItalic.ttf"; sourceTree = "<group>"; };
 		E2517635219D7FD700D89C52 /* Rubik-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Rubik-Medium.ttf"; path = "../../../../../Downloads/Rubik/Rubik-Medium.ttf"; sourceTree = "<group>"; };
 		E2517636219D7FD700D89C52 /* Rubik-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Rubik-Black.ttf"; path = "../../../../../Downloads/Rubik/Rubik-Black.ttf"; sourceTree = "<group>"; };
+		E2B2A68521A6C113005222C0 /* RestaurantDetailSeparatorCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantDetailSeparatorCell.swift; sourceTree = "<group>"; };
+		E2B2A68721A6C221005222C0 /* RestaurantDetailMapCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantDetailMapCell.swift; sourceTree = "<group>"; };
 		E2BF261A21A44A5900946387 /* UIColorExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExt.swift; sourceTree = "<group>"; };
 		E2BF261C21A454EE00946387 /* NavigationControllerExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationControllerExt.swift; sourceTree = "<group>"; };
 		E2CEB7F921A6B53C006B4947 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
@@ -106,6 +110,8 @@
 				F463DF77211D35A600F73F88 /* RestaurantTableViewCell.swift */,
 				E2FE6854219EDA26008C2ADF /* RestaurantDetailIconTextCell.swift */,
 				E2FE6856219EE6FF008C2ADF /* RestaurantDetailTextCell.swift */,
+				E2B2A68521A6C113005222C0 /* RestaurantDetailSeparatorCell.swift */,
+				E2B2A68721A6C221005222C0 /* RestaurantDetailMapCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -274,6 +280,7 @@
 			files = (
 				E223BEF8219D9F2B0021446F /* RestaurantDetailHeaderView.swift in Sources */,
 				E2517625219C30E600D89C52 /* Restaurant.swift in Sources */,
+				E2B2A68821A6C221005222C0 /* RestaurantDetailMapCell.swift in Sources */,
 				E2FE6857219EE6FF008C2ADF /* RestaurantDetailTextCell.swift in Sources */,
 				E2BF261B21A44A5900946387 /* UIColorExt.swift in Sources */,
 				F44705C0211AFFE1002E0327 /* RestaurantTableViewController.swift in Sources */,
@@ -281,6 +288,7 @@
 				E2FE6855219EDA26008C2ADF /* RestaurantDetailIconTextCell.swift in Sources */,
 				E24A0746219AE3C100993E60 /* RestaurantDetailViewController.swift in Sources */,
 				F44705AE211AF99E002E0327 /* AppDelegate.swift in Sources */,
+				E2B2A68621A6C113005222C0 /* RestaurantDetailSeparatorCell.swift in Sources */,
 				E2BF261D21A454EE00946387 /* NavigationControllerExt.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
