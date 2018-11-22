@@ -94,7 +94,7 @@ class RestaurantDetailViewController: UIViewController, UITableViewDataSource, U
             
         case 4:
             let cell = tableView.dequeueReusableCell(withIdentifier: String(describing: RestaurantDetailMapCell.self), for: indexPath) as! RestaurantDetailMapCell
-            cell.selectionStyle = .none
+            cell.configure(location: restaurant.location)
             
             return cell
             
