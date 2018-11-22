@@ -22,6 +22,7 @@
 		E2517640219D80B000D89C52 /* Rubik-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E251762E219D7FD700D89C52 /* Rubik-Regular.ttf */; };
 		E2BF261B21A44A5900946387 /* UIColorExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2BF261A21A44A5900946387 /* UIColorExt.swift */; };
 		E2BF261D21A454EE00946387 /* NavigationControllerExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2BF261C21A454EE00946387 /* NavigationControllerExt.swift */; };
+		E2CEB7FA21A6B53C006B4947 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E2CEB7F921A6B53C006B4947 /* MapKit.framework */; };
 		E2FE6855219EDA26008C2ADF /* RestaurantDetailIconTextCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2FE6854219EDA26008C2ADF /* RestaurantDetailIconTextCell.swift */; };
 		E2FE6857219EE6FF008C2ADF /* RestaurantDetailTextCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2FE6856219EE6FF008C2ADF /* RestaurantDetailTextCell.swift */; };
 		F44705AE211AF99E002E0327 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F44705AD211AF99E002E0327 /* AppDelegate.swift */; };
@@ -48,6 +49,7 @@
 		E2517636219D7FD700D89C52 /* Rubik-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Rubik-Black.ttf"; path = "../../../../../Downloads/Rubik/Rubik-Black.ttf"; sourceTree = "<group>"; };
 		E2BF261A21A44A5900946387 /* UIColorExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExt.swift; sourceTree = "<group>"; };
 		E2BF261C21A454EE00946387 /* NavigationControllerExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationControllerExt.swift; sourceTree = "<group>"; };
+		E2CEB7F921A6B53C006B4947 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		E2FE6854219EDA26008C2ADF /* RestaurantDetailIconTextCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantDetailIconTextCell.swift; sourceTree = "<group>"; };
 		E2FE6856219EE6FF008C2ADF /* RestaurantDetailTextCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantDetailTextCell.swift; sourceTree = "<group>"; };
 		F44705AA211AF99E002E0327 /* FoodPin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FoodPin.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -65,6 +67,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E2CEB7FA21A6B53C006B4947 /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -141,11 +144,20 @@
 			path = Fonts;
 			sourceTree = "<group>";
 		};
+		E2CEB7F821A6B53C006B4947 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E2CEB7F921A6B53C006B4947 /* MapKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		F44705A1211AF99D002E0327 = {
 			isa = PBXGroup;
 			children = (
 				F44705AC211AF99E002E0327 /* FoodPin */,
 				F44705AB211AF99E002E0327 /* Products */,
+				E2CEB7F821A6B53C006B4947 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -206,6 +218,11 @@
 				TargetAttributes = {
 					F44705A9211AF99E002E0327 = {
 						CreatedOnToolsVersion = 10.0;
+						SystemCapabilities = {
+							com.apple.Maps.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
