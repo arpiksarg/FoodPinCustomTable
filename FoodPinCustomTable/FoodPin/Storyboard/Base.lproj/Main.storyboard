@@ -114,22 +114,23 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" contentInsetAdjustmentBehavior="never" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="yBp-SL-AL7">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" contentInsetAdjustmentBehavior="never" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="yBp-SL-AL7">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <view key="tableHeaderView" contentMode="scaleToFill" id="0q4-fz-NAR" userLabel="Header View" customClass="RestaurantDetailHeaderView" customModule="FoodPin" customModuleProvider="target">
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="350"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     <subviews>
                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="cGK-pb-nZl" userLabel="Header Image View">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="350"/>
+                                            <rect key="frame" x="0.0" y="64" width="375" height="286"/>
                                         </imageView>
                                         <view alpha="0.20000000000000001" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nyY-DZ-WuQ" userLabel="Dim View">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="350"/>
                                             <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </view>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="axY-ea-Ku8" userLabel="Name Label">
-                                            <rect key="frame" x="14" y="278" width="91.5" height="41"/>
+                                            <rect key="frame" x="14" y="278" width="86" height="41"/>
                                             <fontDescription key="fontDescription" name="Rubik-Medium" family="Rubik" pointSize="35"/>
                                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <nil key="highlightedColor"/>
@@ -160,7 +161,7 @@
                                         <constraint firstItem="nyY-DZ-WuQ" firstAttribute="leading" secondItem="0q4-fz-NAR" secondAttribute="leading" id="97d-2g-LVj"/>
                                         <constraint firstItem="cGK-pb-nZl" firstAttribute="leading" secondItem="0q4-fz-NAR" secondAttribute="leading" id="9Li-MI-x49"/>
                                         <constraint firstItem="nyY-DZ-WuQ" firstAttribute="top" secondItem="0q4-fz-NAR" secondAttribute="top" id="HQH-KH-d8b"/>
-                                        <constraint firstItem="cGK-pb-nZl" firstAttribute="top" secondItem="0q4-fz-NAR" secondAttribute="top" id="IlI-l1-PHk"/>
+                                        <constraint firstItem="cGK-pb-nZl" firstAttribute="top" secondItem="0q4-fz-NAR" secondAttribute="top" constant="64" id="IlI-l1-PHk"/>
                                         <constraint firstAttribute="bottom" secondItem="8Pc-nW-Nk0" secondAttribute="bottom" constant="8" id="Mab-6Q-fuS"/>
                                         <constraint firstItem="axY-ea-Ku8" firstAttribute="leading" secondItem="8Pc-nW-Nk0" secondAttribute="leading" id="VL5-22-JhQ"/>
                                         <constraint firstAttribute="trailing" secondItem="nyY-DZ-WuQ" secondAttribute="trailing" id="Z72-WT-WFx"/>
@@ -232,7 +233,7 @@
                                                 </label>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="O53-UK-ioK" firstAttribute="bottom" secondItem="oxb-9f-ZcL" secondAttribute="bottomMargin" id="fDj-TV-NMK"/>
+                                                <constraint firstItem="O53-UK-ioK" firstAttribute="bottom" secondItem="oxb-9f-ZcL" secondAttribute="bottomMargin" id="fDj-TV-NMK" userLabel="Description Label.top = topMargin"/>
                                                 <constraint firstAttribute="trailingMargin" secondItem="O53-UK-ioK" secondAttribute="trailing" constant="10" id="ilf-yk-3d0"/>
                                                 <constraint firstItem="O53-UK-ioK" firstAttribute="leading" secondItem="oxb-9f-ZcL" secondAttribute="leadingMargin" constant="10" id="zTE-Wg-9XP"/>
                                             </constraints>
@@ -245,12 +246,6 @@
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <constraints>
-                            <constraint firstItem="yBp-SL-AL7" firstAttribute="leading" secondItem="Dhn-Yo-oji" secondAttribute="leading" id="1Oq-9Q-Tsq"/>
-                            <constraint firstItem="yBp-SL-AL7" firstAttribute="top" secondItem="NYh-2A-KdI" secondAttribute="top" id="7RH-PV-4Tx"/>
-                            <constraint firstItem="Dhn-Yo-oji" firstAttribute="bottom" secondItem="yBp-SL-AL7" secondAttribute="bottom" id="NXe-WF-1WO"/>
-                            <constraint firstItem="Dhn-Yo-oji" firstAttribute="trailing" secondItem="yBp-SL-AL7" secondAttribute="trailing" id="bIW-Xa-0jg"/>
-                        </constraints>
                         <viewLayoutGuide key="safeArea" id="Dhn-Yo-oji"/>
                     </view>
                     <connections>
