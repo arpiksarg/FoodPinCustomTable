@@ -60,6 +60,12 @@ class RestaurantDetailViewController: UIViewController, UITableViewDataSource, U
         return 5
     }
     
+//    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+//        if indexPath.row == 4 {
+//            performSegue(withIdentifier: "showMap", sender: self    )
+//        }
+//    }
+    
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         switch indexPath.row {
