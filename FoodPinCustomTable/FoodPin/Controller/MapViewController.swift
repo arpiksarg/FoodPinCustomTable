@@ -20,6 +20,11 @@ class MapViewController: UIViewController, MKMapViewDelegate {
         
         mapView.delegate = self
         
+        mapView.showsCompass = true
+        mapView.showsScale = true
+        mapView.showsTraffic = true
+        
+        
         let geoCoder = CLGeocoder()
         
         print(restaurant.location)
