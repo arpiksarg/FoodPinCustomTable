@@ -414,9 +414,8 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="cross"/>
                             </button>
-                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" alignment="top" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="uRP-b3-yZy">
-                                <rect key="frame" x="74" y="81" width="227" height="481"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="uRP-b3-yZy">
+                                <rect key="frame" x="74" y="93" width="227" height="481"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TGn-SW-4La">
                                         <rect key="frame" x="0.0" y="0.0" width="188" height="82"/>
@@ -448,6 +447,8 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="uRP-b3-yZy" firstAttribute="centerY" secondItem="md9-iX-FBL" secondAttribute="centerY" id="4rj-1s-DJ3"/>
+                            <constraint firstItem="uRP-b3-yZy" firstAttribute="centerX" secondItem="md9-iX-FBL" secondAttribute="centerX" id="G7L-jU-Seq"/>
                             <constraint firstItem="a64-re-Iad" firstAttribute="bottom" secondItem="54l-Im-w3l" secondAttribute="bottom" id="QgY-0v-Zkw"/>
                             <constraint firstItem="54l-Im-w3l" firstAttribute="leading" secondItem="a64-re-Iad" secondAttribute="leading" id="RMq-l1-29p"/>
                             <constraint firstItem="a64-re-Iad" firstAttribute="trailing" secondItem="54l-Im-w3l" secondAttribute="trailing" id="Ukm-E7-CtX"/>
