@@ -183,13 +183,28 @@
                                     <rect key="frame" x="0.0" y="715" width="375" height="90"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     <subviews>
-                                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fdd-bT-HLT">
-                                            <rect key="frame" x="146" y="30" width="44" height="30"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" reversesTitleShadowWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fdd-bT-HLT">
+                                            <rect key="frame" x="15" y="21" width="345" height="47"/>
+                                            <color key="backgroundColor" red="0.90588235294117647" green="0.29803921568627451" blue="0.23529411764705882" alpha="1" colorSpace="calibratedRGB"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="47" id="g0S-6c-x0i"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
                                             <state key="normal" title="Rate it"/>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                    <integer key="value" value="25"/>
+                                                </userDefinedRuntimeAttribute>
+                                            </userDefinedRuntimeAttributes>
                                         </button>
                                     </subviews>
                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstItem="fdd-bT-HLT" firstAttribute="leading" secondItem="9iN-eO-1fl" secondAttribute="leading" constant="15" id="24S-Js-4Gb"/>
+                                        <constraint firstAttribute="trailing" secondItem="fdd-bT-HLT" secondAttribute="trailing" constant="15" id="4u4-wI-tjL"/>
+                                        <constraint firstAttribute="bottom" secondItem="fdd-bT-HLT" secondAttribute="bottom" constant="22" id="VjI-Lg-zn1"/>
+                                        <constraint firstItem="fdd-bT-HLT" firstAttribute="top" secondItem="9iN-eO-1fl" secondAttribute="top" constant="21" id="WWq-AZ-wsA"/>
+                                    </constraints>
                                 </view>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="RestaurantDetailIconTextCell" id="XqI-qr-QCn" customClass="RestaurantDetailIconTextCell" customModule="FoodPin" customModuleProvider="target">
