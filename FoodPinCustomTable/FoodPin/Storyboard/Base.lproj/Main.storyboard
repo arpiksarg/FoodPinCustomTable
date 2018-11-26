@@ -398,10 +398,10 @@
             </objects>
             <point key="canvasLocation" x="2546" y="58"/>
         </scene>
-        <!--View Controller-->
+        <!--Review View Controller-->
         <scene sceneID="21C-e9-HZ0">
             <objects>
-                <viewController id="zJt-wz-J0T" sceneMemberID="viewController">
+                <viewController id="zJt-wz-J0T" customClass="ReviewViewController" customModule="FoodPin" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="md9-iX-FBL">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -456,6 +456,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="a64-re-Iad"/>
                     </view>
+                    <connections>
+                        <outlet property="backgroundImageView" destination="54l-Im-w3l" id="6Fb-wh-HcR"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Pm2-b0-eHa" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
