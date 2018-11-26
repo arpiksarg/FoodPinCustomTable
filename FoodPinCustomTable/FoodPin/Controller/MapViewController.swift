@@ -18,38 +18,32 @@ class MapViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-      // Convert address to coordinate and annotate it on map
-        
         let geoCoder = CLGeocoder()
         
         print(restaurant.location)
-        
         geoCoder.geocodeAddressString(restaurant.location, completionHandler: { placemarks, error in
-            if let error = error {
-                print(error.localizedDescription)
+                if let error = error {
+                print(error)
                 return
             }
             
             if let placemarks = placemarks {
-                
                 // Get the first placemark
                 let placemark = placemarks[0]
                 
                 // Add annotation
-                
                 let annotation = MKPointAnnotation()
                 
+                annotation.title = self.restaurant.name
+                annotation.subtitle = self.restaurant.type
+                
                 if let location = placemark.location {
+                    annotation.coordinate = location.coordinate
                     
                     // Display the annotation
                     
-                    annotation.coordinate = location.coordinate
-                    self.mapView.addAnnotation(annotation)
-                    
-                    //Set the zoom level
-                    
-                    let region = MKCoordinateRegion (center: annotation.coordinate, latitudinalMeters: 250, longitudinalMeters: 250)
-                    self.mapView.setRegion(region, animated: false)
+                    self.mapView.showAnnotations([annotation], animated: true)
+                    self.mapView.selectAnnotation(annotation, animated: true)
                 }
             }
         })
