@@ -464,11 +464,11 @@
                     </view>
                     <connections>
                         <outlet property="backgroundImageView" destination="54l-Im-w3l" id="6Fb-wh-HcR"/>
-                        <outletCollection property="rateButton" destination="TGn-SW-4La" collectionClass="NSMutableArray" id="M1b-gK-ud1"/>
-                        <outletCollection property="rateButton" destination="xXb-tx-0zG" collectionClass="NSMutableArray" id="3aQ-H4-asz"/>
-                        <outletCollection property="rateButton" destination="N6V-qZ-csQ" collectionClass="NSMutableArray" id="gdP-6v-H9g"/>
-                        <outletCollection property="rateButton" destination="zZ2-sE-FTw" collectionClass="NSMutableArray" id="YoE-en-csR"/>
-                        <outletCollection property="rateButton" destination="3N1-um-s7n" collectionClass="NSMutableArray" id="95D-1c-ZDd"/>
+                        <outletCollection property="rateButtons" destination="TGn-SW-4La" collectionClass="NSMutableArray" id="KLj-tT-FiX"/>
+                        <outletCollection property="rateButtons" destination="xXb-tx-0zG" collectionClass="NSMutableArray" id="OKJ-t5-L4P"/>
+                        <outletCollection property="rateButtons" destination="N6V-qZ-csQ" collectionClass="NSMutableArray" id="6eh-d7-9eA"/>
+                        <outletCollection property="rateButtons" destination="zZ2-sE-FTw" collectionClass="NSMutableArray" id="WUd-5i-cxK"/>
+                        <outletCollection property="rateButtons" destination="3N1-um-s7n" collectionClass="NSMutableArray" id="J02-PX-Cze"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Pm2-b0-eHa" userLabel="First Responder" sceneMemberID="firstResponder"/>
