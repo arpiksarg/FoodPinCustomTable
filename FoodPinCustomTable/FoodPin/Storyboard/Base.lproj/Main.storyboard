@@ -132,9 +132,12 @@
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="350"/>
                                             <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </view>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="PNl-0e-EVz">
-                                            <rect key="frame" x="67" y="111" width="240" height="128"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="PNl-0e-EVz">
+                                            <rect key="frame" x="315" y="290" width="50" height="52"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="52" id="G8l-bZ-otw"/>
+                                                <constraint firstAttribute="width" constant="50" id="dtY-fQ-Gbs"/>
+                                            </constraints>
                                         </imageView>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="axY-ea-Ku8" userLabel="Name Label">
                                             <rect key="frame" x="14" y="277.5" width="91.5" height="41.5"/>
@@ -173,6 +176,8 @@
                                         <constraint firstItem="axY-ea-Ku8" firstAttribute="leading" secondItem="8Pc-nW-Nk0" secondAttribute="leading" id="VL5-22-JhQ"/>
                                         <constraint firstAttribute="trailing" secondItem="nyY-DZ-WuQ" secondAttribute="trailing" id="Z72-WT-WFx"/>
                                         <constraint firstAttribute="bottom" secondItem="cGK-pb-nZl" secondAttribute="bottom" id="a6s-wy-PIt"/>
+                                        <constraint firstAttribute="trailing" secondItem="PNl-0e-EVz" secondAttribute="trailing" constant="10" id="aB6-cc-bLW"/>
+                                        <constraint firstItem="8Pc-nW-Nk0" firstAttribute="bottom" secondItem="PNl-0e-EVz" secondAttribute="bottom" id="hEO-G4-Rnz"/>
                                         <constraint firstItem="8Pc-nW-Nk0" firstAttribute="leading" secondItem="0q4-fz-NAR" secondAttribute="leading" constant="14" id="hNT-2H-axa"/>
                                         <constraint firstItem="8Pc-nW-Nk0" firstAttribute="top" secondItem="axY-ea-Ku8" secondAttribute="bottom" constant="3" id="kbv-hJ-jmw"/>
                                         <constraint firstItem="Gq5-Kj-DvI" firstAttribute="centerY" secondItem="8Pc-nW-Nk0" secondAttribute="centerY" id="rPT-ij-RfU"/>
