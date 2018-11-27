@@ -188,6 +188,7 @@
                                         <outlet property="headerImageView" destination="cGK-pb-nZl" id="Xyf-I8-0TJ"/>
                                         <outlet property="heartImageView" destination="Gq5-Kj-DvI" id="XtH-7T-GYl"/>
                                         <outlet property="nameLabel" destination="axY-ea-Ku8" id="iH6-i5-VF1"/>
+                                        <outlet property="ratingImageView" destination="PNl-0e-EVz" id="OxO-gf-9Ru"/>
                                         <outlet property="typeLabel" destination="8Pc-nW-Nk0" id="mgk-k7-uiB"/>
                                     </connections>
                                 </view>
