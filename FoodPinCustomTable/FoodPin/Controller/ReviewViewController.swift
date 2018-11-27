@@ -18,5 +18,12 @@ class ReviewViewController: UIViewController {
         super.viewDidLoad()
 
        backgroundImageView.image = UIImage(named: restaurant.image)
+        
+        // Applaying the blur effect
+        
+        let blurEffect = UIBlurEffect(style: .dark)
+        let blurEffectView = UIVisualEffectView(effect: blurEffect)
+        blurEffectView.frame = view.bounds
+        backgroundImageView.addSubview(blurEffectView)
     }
 }
