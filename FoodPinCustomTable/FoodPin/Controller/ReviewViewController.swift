@@ -28,15 +28,16 @@ class ReviewViewController: UIViewController {
         backgroundImageView.addSubview(blurEffectView)
         
         let moveRightTransform = CGAffineTransform.init(translationX: 600, y: 0)
+        let scaleUpTransform = CGAffineTransform.init(scaleX: 5.0, y: 5.0)
+        let moveScaletransform = scaleUpTransform.concatenating(moveRightTransform)
         
-        // Make the button invisible
+        // Make the button invisible and move off the screen
         
-        for rateButton in rateButtons {
-            rateButton.transform = moveRightTransform
+        for rateButton  in rateButtons {
+            rateButton.transform = moveScaletransform
             rateButton.alpha = 0
         }
     }
-
 
 override func viewWillAppear(_ animated: Bool) {
     
