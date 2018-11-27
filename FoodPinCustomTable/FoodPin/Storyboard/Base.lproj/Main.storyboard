@@ -293,16 +293,16 @@
                                                             <rect key="frame" x="0.0" y="0.0" width="339" height="26"/>
                                                             <subviews>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Subsection Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1r4-8G-Yl4">
-                                                                    <rect key="frame" x="0.0" y="0.0" width="204.5" height="26"/>
+                                                                    <rect key="frame" x="0.0" y="0.0" width="275" height="26"/>
                                                                     <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
                                                                     <nil key="textColor"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
                                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ycC-Q2-m3X">
-                                                                    <rect key="frame" x="204.5" y="0.0" width="134.5" height="26"/>
+                                                                    <rect key="frame" x="275" y="0.0" width="64" height="26"/>
                                                                     <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                     <fontDescription key="fontDescription" type="system" pointSize="11"/>
-                                                                    <state key="normal" title="Full Screen Map">
+                                                                    <state key="normal" title="More">
                                                                         <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                     </state>
                                                                     <userDefinedRuntimeAttributes>
@@ -416,6 +416,9 @@
                                 <rect key="frame" x="320" y="45" width="33" height="32"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="cross"/>
+                                <connections>
+                                    <segue destination="bVJ-d9-ZeT" kind="unwind" unwindAction="closeWithSegue:" id="VqO-hc-R6L"/>
+                                </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="uRP-b3-yZy">
                                 <rect key="frame" x="74" y="93" width="227" height="481"/>
@@ -464,8 +467,9 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Pm2-b0-eHa" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="bVJ-d9-ZeT" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="2545" y="748"/>
+            <point key="canvasLocation" x="2558" y="751"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="T0U-eo-dMe">
