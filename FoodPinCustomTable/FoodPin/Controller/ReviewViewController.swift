@@ -27,6 +27,9 @@ class ReviewViewController: UIViewController {
         blurEffectView.frame = view.bounds
         backgroundImageView.addSubview(blurEffectView)
         
+        
+        // Combined Animations
+        
         let moveRightTransform = CGAffineTransform.init(translationX: 600, y: 0)
         let scaleUpTransform = CGAffineTransform.init(scaleX: 5.0, y: 5.0)
         let moveScaletransform = scaleUpTransform.concatenating(moveRightTransform)
@@ -40,6 +43,8 @@ class ReviewViewController: UIViewController {
     }
 
 override func viewWillAppear(_ animated: Bool) {
+    
+        //Set Spring animation to the rateButtons
     
         UIView.animate(withDuration: 0.8, delay: 0.1, usingSpringWithDamping: 0.2, initialSpringVelocity: 0.3, options: [], animations: {
             self.rateButtons[0].alpha = 1.0
