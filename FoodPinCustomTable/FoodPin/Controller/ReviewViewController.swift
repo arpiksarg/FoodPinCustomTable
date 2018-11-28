@@ -49,7 +49,7 @@ class ReviewViewController: UIViewController {
         }
     }
 
-override func viewWillAppear(_ animated: Bool) {
+    override func viewWillAppear(_ animated: Bool) {
     
     // Exercise #1
     
@@ -64,7 +64,6 @@ override func viewWillAppear(_ animated: Bool) {
         UIView.animate(withDuration: 0.8, delay: 0.1, usingSpringWithDamping: 0.2, initialSpringVelocity: 0.3, options: [], animations: {
             rateButton.alpha = 1.0
             rateButton.transform = .identity }, completion: nil)
-        
         }
    }
 }
