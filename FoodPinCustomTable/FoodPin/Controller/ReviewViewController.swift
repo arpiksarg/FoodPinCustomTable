@@ -21,6 +21,12 @@ class ReviewViewController: UIViewController {
 
        backgroundImageView.image = UIImage(named: restaurant.image)
         
+        // Exercise #1 Adding slide-in-from-top animation to close button
+        
+        let slideInFromTop = CGAffineTransform.init(translationX: 0, y: -100)
+        closeButton.transform = slideInFromTop
+        closeButton.alpha = 0
+        
         // Applaying the blur effect
         
         let blurEffect = UIBlurEffect(style: .dark)
@@ -44,6 +50,12 @@ class ReviewViewController: UIViewController {
     }
 
 override func viewWillAppear(_ animated: Bool) {
+    
+    // Exercise #1
+    
+    UIView.animate(withDuration: 0.4, delay: 0.3, options: [], animations: { self.closeButton.alpha = 1.0
+        self.closeButton.transform = .identity
+    }, completion: nil)
     
         //Set Spring animation to the rateButtons
     
