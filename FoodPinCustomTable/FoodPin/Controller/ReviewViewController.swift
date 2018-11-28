@@ -10,6 +10,7 @@ import UIKit
 
 class ReviewViewController: UIViewController {
 
+    @IBOutlet weak var closeButton: UIButton!
     @IBOutlet var backgroundImageView: UIImageView!
     @IBOutlet var rateButtons: [UIButton]!
     
