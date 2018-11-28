@@ -57,26 +57,14 @@ override func viewWillAppear(_ animated: Bool) {
         self.closeButton.transform = .identity
     }, completion: nil)
     
-        //Set Spring animation to the rateButtons
+    // Set Spring animation to the rateButtons
+    // Exercise #2 rewritten code with for-in loop
     
+    for rateButton in rateButtons {
         UIView.animate(withDuration: 0.8, delay: 0.1, usingSpringWithDamping: 0.2, initialSpringVelocity: 0.3, options: [], animations: {
-            self.rateButtons[0].alpha = 1.0
-            self.rateButtons[0].transform = .identity }, completion: nil)
-    
-        UIView.animate(withDuration: 0.8, delay: 0.1, usingSpringWithDamping: 0.2, initialSpringVelocity: 0.3, options: [], animations: {
-            self.rateButtons[1].alpha = 1.0
-            self.rateButtons[1].transform = .identity }, completion: nil)
-    
-        UIView.animate(withDuration: 0.8, delay: 0.1, usingSpringWithDamping: 0.2, initialSpringVelocity: 0.3, options: [], animations: {
-            self.rateButtons[2].alpha = 1.0
-            self.rateButtons[2].transform = .identity }, completion: nil)
-    
-        UIView.animate(withDuration: 0.8, delay: 0.1, usingSpringWithDamping: 0.2, initialSpringVelocity: 0.3, options: [], animations: {
-            self.rateButtons[3].alpha = 1.0
-            self.rateButtons[3].transform = .identity }, completion: nil)
-    
-        UIView.animate(withDuration: 0.8, delay: 0.1, usingSpringWithDamping: 0.2, initialSpringVelocity: 0.3, options: [], animations: {
-            self.rateButtons[4].alpha = 1.0
-            self.rateButtons[4].transform = .identity }, completion: nil)
-    }
+            rateButton.alpha = 1.0
+            rateButton.transform = .identity }, completion: nil)
+        
+        }
+   }
 }
