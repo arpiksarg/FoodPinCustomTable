@@ -140,7 +140,7 @@
                                             </constraints>
                                         </imageView>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="axY-ea-Ku8" userLabel="Name Label">
-                                            <rect key="frame" x="14" y="277.5" width="91.5" height="41.5"/>
+                                            <rect key="frame" x="14" y="278" width="86" height="41"/>
                                             <fontDescription key="fontDescription" name="Rubik-Medium" family="Rubik" pointSize="35"/>
                                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <nil key="highlightedColor"/>
@@ -188,7 +188,7 @@
                                         <outlet property="headerImageView" destination="cGK-pb-nZl" id="Xyf-I8-0TJ"/>
                                         <outlet property="heartImageView" destination="Gq5-Kj-DvI" id="XtH-7T-GYl"/>
                                         <outlet property="nameLabel" destination="axY-ea-Ku8" id="iH6-i5-VF1"/>
-                                        <outlet property="ratingImageView" destination="PNl-0e-EVz" id="OxO-gf-9Ru"/>
+                                        <outlet property="ratingImageView" destination="PNl-0e-EVz" id="FJe-bc-7qG"/>
                                         <outlet property="typeLabel" destination="8Pc-nW-Nk0" id="mgk-k7-uiB"/>
                                     </connections>
                                 </view>
@@ -212,7 +212,7 @@
                                                 </userDefinedRuntimeAttribute>
                                             </userDefinedRuntimeAttributes>
                                             <connections>
-                                                <segue destination="zJt-wz-J0T" kind="presentation" identifier="showReview" modalTransitionStyle="partialCurl" id="EGk-L5-b3w"/>
+                                                <segue destination="zJt-wz-J0T" kind="presentation" identifier="showReview" id="gJE-lZ-GRC"/>
                                             </connections>
                                         </button>
                                     </subviews>
@@ -437,26 +437,41 @@
                                         <rect key="frame" x="0.0" y="0.0" width="188" height="82"/>
                                         <fontDescription key="fontDescription" name="Rubik-Regular" family="Rubik" pointSize="50"/>
                                         <state key="normal" title="Love" image="love"/>
+                                        <connections>
+                                            <segue destination="bVJ-d9-ZeT" kind="unwind" identifier="love" unwindAction="rateRestaurantWithSegue:" id="452-41-QcS"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xXb-tx-0zG">
                                         <rect key="frame" x="0.0" y="92" width="181" height="83"/>
                                         <fontDescription key="fontDescription" name="Rubik-Regular" family="Rubik" pointSize="50"/>
                                         <state key="normal" title="Cool" image="cool"/>
+                                        <connections>
+                                            <segue destination="bVJ-d9-ZeT" kind="unwind" identifier="cool" unwindAction="rateRestaurantWithSegue:" id="fhS-Gq-rEZ"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N6V-qZ-csQ">
                                         <rect key="frame" x="0.0" y="185" width="227" height="86"/>
                                         <fontDescription key="fontDescription" name="Rubik-Regular" family="Rubik" pointSize="50"/>
                                         <state key="normal" title="Happy" image="happy"/>
+                                        <connections>
+                                            <segue destination="bVJ-d9-ZeT" kind="unwind" identifier="happy" unwindAction="rateRestaurantWithSegue:" id="NRI-ho-VSf"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zZ2-sE-FTw">
                                         <rect key="frame" x="0.0" y="281" width="167" height="87"/>
                                         <fontDescription key="fontDescription" name="Rubik-Regular" family="Rubik" pointSize="50"/>
                                         <state key="normal" title="Sad" image="sad"/>
+                                        <connections>
+                                            <segue destination="bVJ-d9-ZeT" kind="unwind" identifier="sad" unwindAction="rateRestaurantWithSegue:" id="tBg-pR-rYF"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3N1-um-s7n">
                                         <rect key="frame" x="0.0" y="378" width="218" height="103"/>
                                         <fontDescription key="fontDescription" name="Rubik-Regular" family="Rubik" pointSize="50"/>
                                         <state key="normal" title="Angry" image="angry"/>
+                                        <connections>
+                                            <segue destination="bVJ-d9-ZeT" kind="unwind" identifier="angry" unwindAction="rateRestaurantWithSegue:" id="Ncp-tm-Wcr"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
