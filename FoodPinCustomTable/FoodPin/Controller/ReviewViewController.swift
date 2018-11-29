@@ -61,7 +61,7 @@ class ReviewViewController: UIViewController {
     // Exercise #2 rewritten code with for-in loop
     
     for rateButton in rateButtons {
-        UIView.animate(withDuration: 0.8, delay: 0.1, usingSpringWithDamping: 0.2, initialSpringVelocity: 0.3, options: [], animations: {
+        UIView.animate(withDuration: 0.8, delay: 0.1, options: [], animations: {
             rateButton.alpha = 1.0
             rateButton.transform = .identity }, completion: nil)
         }
