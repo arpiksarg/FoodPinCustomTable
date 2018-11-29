@@ -107,19 +107,18 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Btd-fi-7zE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="937.5" y="59.154929577464792"/>
+            <point key="canvasLocation" x="694" y="59"/>
         </scene>
         <!--Restaurant Detail View Controller-->
         <scene sceneID="gU0-xC-CTX">
             <objects>
                 <viewController id="nqW-kp-u0i" customClass="RestaurantDetailViewController" customModule="FoodPin" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="NYh-2A-KdI">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="1000"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="800"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" contentInsetAdjustmentBehavior="never" dataMode="prototypes" style="plain" separatorStyle="default" allowsSelectionDuringEditing="YES" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="yBp-SL-AL7">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" contentInsetAdjustmentBehavior="never" dataMode="prototypes" style="plain" separatorStyle="default" allowsSelectionDuringEditing="YES" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="yBp-SL-AL7">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="800"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <view key="tableHeaderView" contentMode="scaleToFill" id="0q4-fz-NAR" userLabel="Header View" customClass="RestaurantDetailHeaderView" customModule="FoodPin" customModuleProvider="target">
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="350"/>
@@ -292,21 +291,21 @@
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="38.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="d6K-H7-VLu">
-                                                    <rect key="frame" x="10" y="5" width="339" height="31"/>
+                                                <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="jDB-aD-7mg">
+                                                    <rect key="frame" x="10" y="0.0" width="350" height="32"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <subviews>
-                                                        <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="IKK-za-kdH">
-                                                            <rect key="frame" x="0.0" y="0.0" width="339" height="26"/>
+                                                        <stackView opaque="NO" contentMode="scaleToFill" spacing="80" translatesAutoresizingMaskIntoConstraints="NO" id="g4v-lx-KyI">
+                                                            <rect key="frame" x="0.0" y="0.0" width="350" height="26"/>
                                                             <subviews>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Subsection Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1r4-8G-Yl4">
-                                                                    <rect key="frame" x="0.0" y="0.0" width="275" height="26"/>
+                                                                    <rect key="frame" x="0.0" y="0.0" width="129.5" height="26"/>
                                                                     <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
                                                                     <nil key="textColor"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
                                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ycC-Q2-m3X">
-                                                                    <rect key="frame" x="275" y="0.0" width="64" height="26"/>
+                                                                    <rect key="frame" x="209.5" y="0.0" width="140.5" height="26"/>
                                                                     <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                     <fontDescription key="fontDescription" type="system" pointSize="11"/>
                                                                     <state key="normal" title="More">
@@ -324,10 +323,10 @@
                                                             </subviews>
                                                         </stackView>
                                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jSu-gD-i60" userLabel="Separator">
-                                                            <rect key="frame" x="0.0" y="30" width="339" height="1"/>
+                                                            <rect key="frame" x="0.0" y="31" width="350" height="1"/>
                                                             <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             <constraints>
-                                                                <constraint firstAttribute="height" constant="1" id="hBQ-ud-TXS"/>
+                                                                <constraint firstAttribute="height" constant="1" id="Qcm-GA-Ffe"/>
                                                             </constraints>
                                                         </view>
                                                     </subviews>
@@ -367,9 +366,15 @@
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Dhn-Yo-oji" firstAttribute="bottom" secondItem="yBp-SL-AL7" secondAttribute="bottom" id="Ew9-36-bBl"/>
+                            <constraint firstItem="yBp-SL-AL7" firstAttribute="trailing" secondItem="Dhn-Yo-oji" secondAttribute="trailing" id="dN1-Uw-uJh"/>
+                            <constraint firstItem="yBp-SL-AL7" firstAttribute="leading" secondItem="Dhn-Yo-oji" secondAttribute="leading" id="kEJ-jn-6QA"/>
+                            <constraint firstItem="yBp-SL-AL7" firstAttribute="top" secondItem="NYh-2A-KdI" secondAttribute="top" id="wzA-iE-v98"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="Dhn-Yo-oji"/>
                     </view>
-                    <size key="freeformSize" width="375" height="1000"/>
+                    <size key="freeformSize" width="375" height="800"/>
                     <connections>
                         <outlet property="headerView" destination="0q4-fz-NAR" id="41H-Ct-9ql"/>
                         <outlet property="tableView" destination="yBp-SL-AL7" id="qVW-KU-kan"/>
@@ -377,7 +382,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="foE-BL-siO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1741.5999999999999" y="57.571214392803604"/>
+            <point key="canvasLocation" x="1656.5625" y="58.098591549295776"/>
         </scene>
         <!--Map View Controller-->
         <scene sceneID="IBq-vc-ybM">
@@ -406,7 +411,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xZi-gK-Vsh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2546" y="58"/>
+            <point key="canvasLocation" x="2558" y="32"/>
         </scene>
         <!--Review View Controller-->
         <scene sceneID="21C-e9-HZ0">
