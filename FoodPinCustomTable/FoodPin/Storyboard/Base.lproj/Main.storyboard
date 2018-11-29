@@ -649,11 +649,12 @@
                             <outlet property="delegate" destination="t5q-XC-GWW" id="7EX-l8-NMd"/>
                         </connections>
                     </tableView>
+                    <navigationItem key="navigationItem" id="eI2-bq-sb2"/>
                     <size key="freeformSize" width="375" height="900"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0bG-kA-rFY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3400.8000000000002" y="31.484257871064472"/>
+            <point key="canvasLocation" x="4340" y="31.484257871064472"/>
         </scene>
         <!--Review View Controller-->
         <scene sceneID="21C-e9-HZ0">
@@ -767,6 +768,24 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XgO-ie-eFL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-60" y="59.154929577464792"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="0Hm-xE-OoU">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="JMM-Sv-iVc" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="sDz-AY-Lno">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="t5q-XC-GWW" kind="relationship" relationship="rootViewController" id="6VT-0q-MoE"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6Nv-rr-Kki" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3400.8000000000002" y="31.03448275862069"/>
         </scene>
     </scenes>
     <resources>
