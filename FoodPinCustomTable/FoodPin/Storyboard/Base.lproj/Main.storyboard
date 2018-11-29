@@ -436,11 +436,14 @@
                                             <rect key="frame" x="0.0" y="0.0" width="320" height="199.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hAh-el-jKp">
-                                                    <rect key="frame" x="40" y="35" width="240" height="128"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="photo" translatesAutoresizingMaskIntoConstraints="NO" id="hAh-el-jKp">
+                                                    <rect key="frame" x="148" y="91" width="24" height="18"/>
                                                 </imageView>
                                             </subviews>
+                                            <constraints>
+                                                <constraint firstItem="hAh-el-jKp" firstAttribute="centerX" secondItem="yVa-MO-vy8" secondAttribute="centerX" id="VyK-XA-gPk"/>
+                                                <constraint firstItem="hAh-el-jKp" firstAttribute="centerY" secondItem="yVa-MO-vy8" secondAttribute="centerY" id="oS4-BT-tQF"/>
+                                            </constraints>
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </tableViewCell>
@@ -618,6 +621,7 @@
         <image name="happy" width="78" height="86"/>
         <image name="heart-tick" width="22" height="21"/>
         <image name="love" width="78" height="82"/>
+        <image name="photo" width="24" height="18"/>
         <image name="sad" width="78" height="87"/>
     </resources>
 </document>
