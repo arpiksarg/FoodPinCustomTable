@@ -147,10 +147,10 @@
 				E2517632219D7FD700D89C52 /* Rubik-BlackItalic.ttf */,
 				E2517630219D7FD700D89C52 /* Rubik-Bold.ttf */,
 				E2517633219D7FD700D89C52 /* Rubik-BoldItalic.ttf */,
-				E2517631219D7FD700D89C52 /* Rubik-Italic.ttf */,
 				E251762F219D7FD700D89C52 /* Rubik-Light.ttf */,
 				E251762D219D7FD700D89C52 /* Rubik-LightItalic.ttf */,
 				E2517635219D7FD700D89C52 /* Rubik-Medium.ttf */,
+				E2517631219D7FD700D89C52 /* Rubik-Italic.ttf */,
 				E2517634219D7FD700D89C52 /* Rubik-MediumItalic.ttf */,
 				E251762E219D7FD700D89C52 /* Rubik-Regular.ttf */,
 			);
