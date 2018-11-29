@@ -610,18 +610,17 @@
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="124.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="DBH-rR-tVi">
-                                                    <rect key="frame" x="82.5" y="27" width="240" height="83.5"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="DBH-rR-tVi">
+                                                    <rect key="frame" x="16" y="11" width="343" height="103"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DESCRIPTION" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J1q-WT-ujA">
-                                                            <rect key="frame" x="0.0" y="0.0" width="240" height="20.5"/>
+                                                            <rect key="frame" x="0.0" y="0.0" width="343" height="20.5"/>
                                                             <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
                                                             <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
-                                                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" text="A great restaurant to try out " textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="RXK-qg-GwX">
-                                                            <rect key="frame" x="0.0" y="25.5" width="240" height="58"/>
+                                                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="A great restaurant to try out " textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="RXK-qg-GwX">
+                                                            <rect key="frame" x="0.0" y="25.5" width="343" height="77.5"/>
                                                             <color key="backgroundColor" red="0.92552995680000005" green="0.92539887629999995" blue="0.92537266019999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                             <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                                             <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -629,6 +628,12 @@
                                                     </subviews>
                                                 </stackView>
                                             </subviews>
+                                            <constraints>
+                                                <constraint firstItem="DBH-rR-tVi" firstAttribute="leading" secondItem="LYV-bW-i9f" secondAttribute="leadingMargin" id="285-Dt-QN3"/>
+                                                <constraint firstItem="DBH-rR-tVi" firstAttribute="top" secondItem="LYV-bW-i9f" secondAttribute="topMargin" id="5yR-pE-QQ0"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="DBH-rR-tVi" secondAttribute="bottom" id="cLf-mh-Osq"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="DBH-rR-tVi" secondAttribute="trailing" id="m7c-6P-kIM"/>
+                                            </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                 </cells>
