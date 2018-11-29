@@ -532,18 +532,17 @@
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="87.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" spacing="7" translatesAutoresizingMaskIntoConstraints="NO" id="Zfp-Pf-AfI">
-                                                    <rect key="frame" x="166" y="19" width="224.5" height="48.5"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="7" translatesAutoresizingMaskIntoConstraints="NO" id="Zfp-Pf-AfI">
+                                                    <rect key="frame" x="16" y="11" width="343" height="66"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ADDRESS" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mzz-1R-X0M">
-                                                            <rect key="frame" x="0.0" y="0.0" width="224.5" height="20.5"/>
+                                                            <rect key="frame" x="0.0" y="0.0" width="343" height="20.5"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Fill in the restaurant address " textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="yYf-gQ-5Ik">
-                                                            <rect key="frame" x="0.0" y="27.5" width="224.5" height="21"/>
+                                                            <rect key="frame" x="0.0" y="27.5" width="343" height="38.5"/>
                                                             <color key="backgroundColor" red="0.92552995680000005" green="0.92539887629999995" blue="0.92537266019999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                             <nil key="textColor"/>
                                                             <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
@@ -552,6 +551,12 @@
                                                     </subviews>
                                                 </stackView>
                                             </subviews>
+                                            <constraints>
+                                                <constraint firstItem="Zfp-Pf-AfI" firstAttribute="leading" secondItem="fbG-p9-i9D" secondAttribute="leadingMargin" id="9ab-0w-p8x"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="Zfp-Pf-AfI" secondAttribute="bottom" id="GUM-dg-bqY"/>
+                                                <constraint firstItem="Zfp-Pf-AfI" firstAttribute="top" secondItem="fbG-p9-i9D" secondAttribute="topMargin" id="umh-aL-VZ5"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="Zfp-Pf-AfI" secondAttribute="trailing" id="xLW-Ad-zTL"/>
+                                            </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="e6x-jK-978">
