@@ -418,10 +418,10 @@
             </objects>
             <point key="canvasLocation" x="2558" y="32"/>
         </scene>
-        <!--Table View Controller-->
+        <!--New Restaurant-->
         <scene sceneID="LKl-AP-bMc">
             <objects>
-                <tableViewController id="t5q-XC-GWW" sceneMemberID="viewController">
+                <tableViewController title="New Restaurant" id="t5q-XC-GWW" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="tre-L5-Lyz">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="900"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -649,7 +649,7 @@
                             <outlet property="delegate" destination="t5q-XC-GWW" id="7EX-l8-NMd"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="eI2-bq-sb2"/>
+                    <navigationItem key="navigationItem" title="New Restaurant" id="eI2-bq-sb2"/>
                     <size key="freeformSize" width="375" height="900"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0bG-kA-rFY" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -774,8 +774,8 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="JMM-Sv-iVc" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="sDz-AY-Lno">
-                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="sDz-AY-Lno">
+                        <rect key="frame" x="0.0" y="20" width="375" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
