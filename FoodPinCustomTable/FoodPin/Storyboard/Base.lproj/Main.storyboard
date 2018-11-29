@@ -610,8 +610,8 @@
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="124.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="DBH-rR-tVi">
-                                                    <rect key="frame" x="82.5" y="27" width="240" height="86.5"/>
+                                                <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" alignment="center" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="DBH-rR-tVi">
+                                                    <rect key="frame" x="82.5" y="27" width="240" height="83.5"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DESCRIPTION" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J1q-WT-ujA">
@@ -621,7 +621,7 @@
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" text="A great restaurant to try out " textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="RXK-qg-GwX">
-                                                            <rect key="frame" x="0.0" y="28.5" width="240" height="58"/>
+                                                            <rect key="frame" x="0.0" y="25.5" width="240" height="58"/>
                                                             <color key="backgroundColor" red="0.92552995680000005" green="0.92539887629999995" blue="0.92537266019999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                             <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                                             <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
