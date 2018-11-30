@@ -8,7 +8,7 @@
 
 import UIKit
 
-class NewRestaurantController: UITableViewController, UITextFieldDelegate {
+class NewRestaurantController: UITableViewController, UITextFieldDelegate, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     
     @IBOutlet var nameTextField: IndentedTextField! {
         didSet {
