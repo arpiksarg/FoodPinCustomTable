@@ -25,6 +25,13 @@ class NewRestaurantController: UITableViewController, UITextFieldDelegate {
         }
     }
     
+    @IBOutlet var addressTextField: IndentedTextField! {
+        didSet {
+            addressTextField.tag = 3
+            addressTextField.delegate = self
+        }
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
