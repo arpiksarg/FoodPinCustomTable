@@ -49,7 +49,14 @@ class NewRestaurantController: UITableViewController, UITextFieldDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+    }
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        if let nextTextField = view.viewWithTag(textField.tag + 1) {
+            textField.resignFirstResponder()
+            nextTextField.becomeFirstResponder()
+        }
         
+        return true
     }
 }
