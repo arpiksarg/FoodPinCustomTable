@@ -103,7 +103,7 @@
                     </tableView>
                     <navigationItem key="navigationItem" title="Food Pin" id="do6-b3-haP">
                         <barButtonItem key="backBarButtonItem" title=" " id="WL8-Ge-17R"/>
-                        <barButtonItem key="rightBarButtonItem" id="3ns-MI-Bs8">
+                        <barButtonItem key="rightBarButtonItem" image="plus" id="3ns-MI-Bs8">
                             <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         </barButtonItem>
                     </navigationItem>
@@ -799,6 +799,7 @@
         <image name="heart-tick" width="22" height="21"/>
         <image name="love" width="78" height="82"/>
         <image name="photo" width="24" height="18"/>
+        <image name="plus" width="16" height="16"/>
         <image name="sad" width="78" height="87"/>
     </resources>
 </document>
