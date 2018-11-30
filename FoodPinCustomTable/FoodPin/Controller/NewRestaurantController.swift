@@ -39,6 +39,14 @@ class NewRestaurantController: UITableViewController, UITextFieldDelegate {
         }
     }
     
+    @IBOutlet var descriptionTextView: IndentedTextField! {
+        didSet {
+            descriptionTextView.tag = 5
+            descriptionTextView.layer.cornerRadius = 5.0
+            descriptionTextView.layer.masksToBounds = true
+        }
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
