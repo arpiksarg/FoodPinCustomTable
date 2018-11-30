@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		E203DCE421B135F700717023 /* IndentedTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = E203DCE321B135F700717023 /* IndentedTextField.swift */; };
+		E203DCE821B148E700717023 /* NewRestaurantController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E203DCE721B148E700717023 /* NewRestaurantController.swift */; };
 		E223BEF8219D9F2B0021446F /* RestaurantDetailHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E223BEF7219D9F2B0021446F /* RestaurantDetailHeaderView.swift */; };
 		E24A0746219AE3C100993E60 /* RestaurantDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E24A0745219AE3C100993E60 /* RestaurantDetailViewController.swift */; };
 		E2517625219C30E600D89C52 /* Restaurant.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2517624219C30E600D89C52 /* Restaurant.swift */; };
@@ -40,6 +41,7 @@
 
 /* Begin PBXFileReference section */
 		E203DCE321B135F700717023 /* IndentedTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndentedTextField.swift; sourceTree = "<group>"; };
+		E203DCE721B148E700717023 /* NewRestaurantController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewRestaurantController.swift; sourceTree = "<group>"; };
 		E223BEF7219D9F2B0021446F /* RestaurantDetailHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantDetailHeaderView.swift; sourceTree = "<group>"; };
 		E24A0745219AE3C100993E60 /* RestaurantDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantDetailViewController.swift; sourceTree = "<group>"; };
 		E2517624219C30E600D89C52 /* Restaurant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Restaurant.swift; sourceTree = "<group>"; };
@@ -98,6 +100,7 @@
 			children = (
 				F44705BF211AFFE1002E0327 /* RestaurantTableViewController.swift */,
 				E24A0745219AE3C100993E60 /* RestaurantDetailViewController.swift */,
+				E203DCE721B148E700717023 /* NewRestaurantController.swift */,
 				E2CF67B021A98903007AF49F /* MapViewController.swift */,
 				E2FBBAC421AC3F9100410C33 /* ReviewViewController.swift */,
 			);
@@ -302,6 +305,7 @@
 				F44705AE211AF99E002E0327 /* AppDelegate.swift in Sources */,
 				E2B2A68621A6C113005222C0 /* RestaurantDetailSeparatorCell.swift in Sources */,
 				E2BF261D21A454EE00946387 /* NavigationControllerExt.swift in Sources */,
+				E203DCE821B148E700717023 /* NewRestaurantController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
