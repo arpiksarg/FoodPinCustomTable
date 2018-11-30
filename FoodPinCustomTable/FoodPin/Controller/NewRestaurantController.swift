@@ -20,7 +20,7 @@ class NewRestaurantController: UITableViewController, UITextFieldDelegate {
     
     @IBOutlet var typeTextField: IndentedTextField! {
         didSet {
-            nameTextField.tag = 2
+            typeTextField.tag = 2
             typeTextField.delegate = self
         }
     }
