@@ -8,8 +8,16 @@
 
 import UIKit
 
-class NewRestaurantController: UITableViewController {
-
+class NewRestaurantController: UITableViewController, UITextFieldDelegate {
+    
+    @IBOutlet var nameTextField: IndentedTextField! {
+        didSet {
+            nameTextField.tag = 1
+            nameTextField.becomeFirstResponder()
+            nameTextField.delegate = self
+        }
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
