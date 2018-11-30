@@ -103,7 +103,9 @@
                     </tableView>
                     <navigationItem key="navigationItem" title="Food Pin" id="do6-b3-haP">
                         <barButtonItem key="backBarButtonItem" title=" " id="WL8-Ge-17R"/>
-                        <barButtonItem key="rightBarButtonItem" title="Item" id="3ns-MI-Bs8"/>
+                        <barButtonItem key="rightBarButtonItem" id="3ns-MI-Bs8">
+                            <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </barButtonItem>
                     </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Btd-fi-7zE" userLabel="First Responder" sceneMemberID="firstResponder"/>
