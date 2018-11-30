@@ -106,7 +106,7 @@
                         <barButtonItem key="rightBarButtonItem" image="plus" id="3ns-MI-Bs8">
                             <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <connections>
-                                <segue destination="JMM-Sv-iVc" kind="presentation" id="2IO-AB-pQy"/>
+                                <segue destination="JMM-Sv-iVc" kind="presentation" identifier="addRestaurant " id="2IO-AB-pQy"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
