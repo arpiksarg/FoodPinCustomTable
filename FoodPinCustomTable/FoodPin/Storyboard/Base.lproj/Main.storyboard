@@ -664,6 +664,12 @@
                         </barButtonItem>
                     </navigationItem>
                     <size key="freeformSize" width="375" height="900"/>
+                    <connections>
+                        <outlet property="addressTextField" destination="yYf-gQ-5Ik" id="O6m-G9-1pr"/>
+                        <outlet property="nameTextField" destination="ibb-o2-ngb" id="8wk-Jo-zsw"/>
+                        <outlet property="phoneTextField" destination="Y1W-5s-5lL" id="Zbi-nN-3Gm"/>
+                        <outlet property="typeTextField" destination="WDx-7Q-UkO" id="ayG-GC-k1d"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0bG-kA-rFY" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="iNe-fD-wZH" userLabel="Exit" sceneMemberID="exit"/>
