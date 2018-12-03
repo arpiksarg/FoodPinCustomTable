@@ -106,4 +106,16 @@ class NewRestaurantController: UITableViewController, UITextFieldDelegate, UIIma
             present(photoSourceRequestController, animated: true, completion: nil)
         }
     }
+    
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
+        
+        if let selectedImage = info[UIImagePickerController.InfoKey.originalImage] as? UIImage {
+            photoImageView.image = selectedImage
+            photoImageView.contentMode = .scaleAspectFill
+            photoImageView.clipsToBounds = true
+            
+        }
+        
+        dismiss(animated: true, completion: nil)
+    }
 }
