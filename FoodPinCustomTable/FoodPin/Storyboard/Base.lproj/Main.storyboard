@@ -145,7 +145,7 @@
                                             </constraints>
                                         </imageView>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="axY-ea-Ku8" userLabel="Name Label">
-                                            <rect key="frame" x="14" y="277.5" width="91.5" height="41.5"/>
+                                            <rect key="frame" x="14" y="278" width="86" height="41"/>
                                             <fontDescription key="fontDescription" name="Rubik-Medium" family="Rubik" pointSize="35"/>
                                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <nil key="highlightedColor"/>
@@ -662,7 +662,7 @@
                                 <segue destination="iNe-fD-wZH" kind="unwind" unwindAction="unwindToHomeWithSegue:" id="hZH-Cn-wl2"/>
                             </connections>
                         </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" title="Item" id="5WZ-3o-yYE"/>
+                        <barButtonItem key="rightBarButtonItem" title="Item" image="save" id="5WZ-3o-yYE"/>
                     </navigationItem>
                     <size key="freeformSize" width="375" height="900"/>
                     <connections>
@@ -821,5 +821,6 @@
         <image name="photo" width="24" height="18"/>
         <image name="plus" width="16" height="16"/>
         <image name="sad" width="78" height="87"/>
+        <image name="save" width="20" height="20"/>
     </resources>
 </document>
