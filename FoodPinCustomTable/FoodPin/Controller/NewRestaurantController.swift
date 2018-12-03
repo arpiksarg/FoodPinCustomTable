@@ -72,6 +72,9 @@ class NewRestaurantController: UITableViewController, UITextFieldDelegate, UIIma
             let cameraAction = UIAlertAction(title: "Camera", style: .default, handler: {(action) in
                 if UIImagePickerController.isSourceTypeAvailable(.camera) {
                     let imagePicker = UIImagePickerController()
+                    
+                    imagePicker.delegate = self
+                    
                     imagePicker.allowsEditing = false
                     imagePicker.sourceType = .camera
                     
@@ -84,6 +87,9 @@ class NewRestaurantController: UITableViewController, UITextFieldDelegate, UIIma
             let photoLibraryAction = UIAlertAction(title: "Photo library", style: .default, handler: {(action) in
                 if UIImagePickerController.isSourceTypeAvailable(.photoLibrary) {
                     let imagePicker = UIImagePickerController()
+                    
+                    imagePicker.delegate = self
+                    
                     imagePicker.allowsEditing = false
                     imagePicker.sourceType = .photoLibrary
                     
