@@ -10,6 +10,8 @@ import UIKit
 
 class NewRestaurantController: UITableViewController, UITextFieldDelegate, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     
+    @IBOutlet var photoImageView: UIImageView!
+    
     @IBOutlet var nameTextField: IndentedTextField! {
         didSet {
             nameTextField.tag = 1
