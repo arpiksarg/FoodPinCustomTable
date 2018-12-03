@@ -662,6 +662,7 @@
                                 <segue destination="iNe-fD-wZH" kind="unwind" unwindAction="unwindToHomeWithSegue:" id="hZH-Cn-wl2"/>
                             </connections>
                         </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" title="Item" id="5WZ-3o-yYE"/>
                     </navigationItem>
                     <size key="freeformSize" width="375" height="900"/>
                     <connections>
