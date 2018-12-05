@@ -139,4 +139,26 @@ class NewRestaurantController: UITableViewController, UITextFieldDelegate, UIIma
         
         dismiss(animated: true, completion: nil)
     }
+
+    //  MARK - Save Action (Exercise #2)
+    
+    @IBAction func saveButtonTapped(sender: AnyObject) {
+        if nameTextField.text == "" || typeTextField.text == "" || addressTextField.text == "" || phoneTextField.text == "" || descriptionTextView.text == "" {
+            
+            let alertController = UIAlertController(title: "Error", message: "Please fill in all fields", preferredStyle: .alert)
+            let alertAction = UIAlertAction(title: "OK", style: .default, handler: nil)
+            alertController.addAction(alertAction)
+            present(alertController, animated: true, completion: nil)
+            
+            return
+            
+        }
+        
+        print("Name: \(nameTextField.text ?? "")")
+        print("Type: \(typeTextField.text ?? "")")
+        print("Location: \(addressTextField.text ?? "")")
+        print("Phone: \(phoneTextField.text ?? "")")
+        print("Description: \(descriptionTextView.text ?? "")")
+        dismiss(animated: true, completion: nil)
+    }
 }
