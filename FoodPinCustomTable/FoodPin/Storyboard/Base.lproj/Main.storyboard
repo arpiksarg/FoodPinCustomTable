@@ -116,12 +116,17 @@
                     <rect key="frame" x="0.0" y="0.0" width="375" height="500"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <subviews>
-                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="empty" translatesAutoresizingMaskIntoConstraints="NO" id="O3i-zg-QKJ">
-                            <rect key="frame" x="0.0" y="0.0" width="320" height="356"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="empty" translatesAutoresizingMaskIntoConstraints="NO" id="O3i-zg-QKJ">
+                            <rect key="frame" x="28" y="100" width="319" height="300"/>
                         </imageView>
                     </subviews>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="b8I-sV-ajF" firstAttribute="trailing" secondItem="O3i-zg-QKJ" secondAttribute="trailing" constant="28" id="oET-98-PJs"/>
+                        <constraint firstItem="O3i-zg-QKJ" firstAttribute="top" secondItem="R4l-N4-fvc" secondAttribute="top" constant="100" id="xr1-Og-cme"/>
+                        <constraint firstItem="O3i-zg-QKJ" firstAttribute="leading" secondItem="b8I-sV-ajF" secondAttribute="leading" constant="28" id="yHn-Cv-8Gr"/>
+                        <constraint firstItem="b8I-sV-ajF" firstAttribute="bottom" secondItem="O3i-zg-QKJ" secondAttribute="bottom" constant="100" id="zaV-MA-xkT"/>
+                    </constraints>
                     <viewLayoutGuide key="safeArea" id="b8I-sV-ajF"/>
                 </view>
             </objects>
