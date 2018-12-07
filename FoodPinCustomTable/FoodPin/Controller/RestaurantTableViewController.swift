@@ -87,7 +87,7 @@ class RestaurantTableViewController: UITableViewController {
         
         let shareAction = UIContextualAction(style: .normal, title: "Share") { (action, sourceView, completionHandler) in
             
-            let defaultText = "Just checking in at " + self.restaurants[indexPath.row].name
+            let defaultText = "Just checking in at " + self.restaurants[indexPath.row].name!
             let activityController: UIActivityViewController
             
             if let imageToShare = UIImage(named: self.restaurants[indexPath.row].image) {

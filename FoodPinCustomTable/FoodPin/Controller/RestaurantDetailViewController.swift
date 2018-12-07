@@ -40,7 +40,7 @@ class RestaurantDetailViewController: UIViewController, UITableViewDataSource, U
         })
     }
     
-    var restaurant = Restaurant()
+    var restaurant : RestaurantMO!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -53,7 +53,11 @@ class RestaurantDetailViewController: UIViewController, UITableViewDataSource, U
         
         headerView.nameLabel.text = restaurant.name
         headerView.typeLabel.text = restaurant.type
-        headerView.headerImageView.image = UIImage(named: restaurant.image)
+        
+        if let restaurantImage = restaurant.image {
+            headerView.headerImageView.image = UIImage(data: restaurantImage as Data)
+        }
+        
         headerView.heartImageView.isHidden = (restaurant.isVisited) ? false : true
         
         tableView.delegate = self
