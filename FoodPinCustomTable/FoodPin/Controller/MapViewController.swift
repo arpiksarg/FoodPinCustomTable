@@ -13,10 +13,13 @@ class MapViewController: UIViewController, MKMapViewDelegate {
     
     @IBOutlet var mapView: MKMapView!
     
-    var restaurant = Restaurant()
+    //var restaurant = Restaurant()
+    var restaurant: RestaurantMO!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        //Customize the map view
         
         mapView.delegate = self
         
@@ -24,6 +27,7 @@ class MapViewController: UIViewController, MKMapViewDelegate {
         mapView.showsScale = true
         mapView.showsTraffic = true
         
+        // Convert address to coordinate and annotate it on map
         
         let geoCoder = CLGeocoder()
         
