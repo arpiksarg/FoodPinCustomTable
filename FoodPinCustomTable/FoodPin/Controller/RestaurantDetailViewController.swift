@@ -53,7 +53,6 @@ class RestaurantDetailViewController: UIViewController, UITableViewDataSource, U
         
         headerView.nameLabel.text = restaurant.name
         headerView.typeLabel.text = restaurant.type
-        
         if let restaurantImage = restaurant.image {
             headerView.headerImageView.image = UIImage(data: restaurantImage as Data)
         }
@@ -131,7 +130,11 @@ class RestaurantDetailViewController: UIViewController, UITableViewDataSource, U
             
         case 4:
             let cell = tableView.dequeueReusableCell(withIdentifier: String(describing: RestaurantDetailMapCell.self), for: indexPath) as! RestaurantDetailMapCell
-            cell.configure(location: restaurant.location)
+            
+            //cell.configure(location: restaurant.location)
+            if let restaurantLocation = restaurant.location {
+                cell.configure(location: restaurantLocation)
+            }
             
             return cell
             
