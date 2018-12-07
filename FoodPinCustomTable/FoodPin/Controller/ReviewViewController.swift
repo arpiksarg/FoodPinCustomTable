@@ -14,7 +14,8 @@ class ReviewViewController: UIViewController {
     @IBOutlet var backgroundImageView: UIImageView!
     @IBOutlet var rateButtons: [UIButton]!
     
-    var restaurant = Restaurant()
+    //var restaurant = Restaurant()
+    var restaurant: RestaurantMO!
     
     override func viewDidLoad() {
         super.viewDidLoad()
