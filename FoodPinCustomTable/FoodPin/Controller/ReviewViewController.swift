@@ -19,8 +19,12 @@ class ReviewViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-       backgroundImageView.image = UIImage(named: restaurant.image)
+        
+        //backgroundImageView.image = UIImage(named: restaurant.image)
+        
+        if let restaurantImage = restaurant.image {
+            backgroundImageView.image = UIImage(data: restaurantImage as Data)
+        }
         
         // Exercise #1 Adding slide-in-from-top animation to close button
         
