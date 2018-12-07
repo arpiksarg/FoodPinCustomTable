@@ -96,7 +96,9 @@ class RestaurantTableViewController: UITableViewController {
             let defaultText = "Just checking in at " + self.restaurants[indexPath.row].name!
             let activityController: UIActivityViewController
             
-            if let imageToShare = UIImage(named: self.restaurants[indexPath.row].image) {
+            if let restaurantImage = self.restaurants[indexPath.row].image,
+            
+               let imageToShare = UIImage(data: restaurantImage as Data) {
                 
                 activityController = UIActivityViewController(activityItems: [defaultText, imageToShare], applicationActivities: nil)
             
