@@ -10,6 +10,8 @@ import UIKit
 
 class RestaurantTableViewController: UITableViewController {
     
+    @IBOutlet var emptyRestaurantView: UIView!
+    
     @IBAction func unwindToHome(segue: UIStoryboardSegue) {
         dismiss(animated: true, completion: nil)
     }
