@@ -33,8 +33,23 @@ class RestaurantTableViewController: UITableViewController {
             navigationController?.navigationBar.largeTitleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor(red: 231, green: 76, blue: 60), NSAttributedString.Key.font: customFont]
         }
         
+        // Assign the empty view to the background and make it invisible
+        
         tableView.backgroundView = emptyRestaurantView
         tableView.backgroundView?.isHidden = true
+    }
+    
+    // Update the method to verify the number of restaurant records
+    
+    override func numberOfSections(in tableView: UITableView) -> Int {
+        if restaurants.count > 0 {
+            tableView.backgroundView?.isHidden = true
+            tableView.separatorStyle = .singleLine
+        } else {
+            tableView.backgroundView?.isHidden = false
+            tableView.separatorStyle = .none
+        }
+        return 1
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -43,10 +58,6 @@ class RestaurantTableViewController: UITableViewController {
     }
     
     // MARK: - UITableViewDataSource Protocol
-
-    override func numberOfSections(in tableView: UITableView) -> Int {
-        return 1
-    }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return restaurants.count
