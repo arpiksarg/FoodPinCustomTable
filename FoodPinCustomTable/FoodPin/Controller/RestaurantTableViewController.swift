@@ -32,6 +32,9 @@ class RestaurantTableViewController: UITableViewController {
         if let customFont = UIFont(name: "Rubik-Medium", size: 40.0) {
             navigationController?.navigationBar.largeTitleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor(red: 231, green: 76, blue: 60), NSAttributedString.Key.font: customFont]
         }
+        
+        tableView.backgroundView = emptyRestaurantView
+        tableView.backgroundView?.isHidden = true
     }
     
     override func viewWillAppear(_ animated: Bool) {
