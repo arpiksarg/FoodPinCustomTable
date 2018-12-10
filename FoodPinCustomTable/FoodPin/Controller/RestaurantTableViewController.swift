@@ -7,8 +7,9 @@
 //
 
 import UIKit
+import CoreData
 
-class RestaurantTableViewController: UITableViewController {
+class RestaurantTableViewController: UITableViewController, NSFetchedResultsControllerDelegate {
     
     @IBOutlet var emptyRestaurantView: UIView!
     
