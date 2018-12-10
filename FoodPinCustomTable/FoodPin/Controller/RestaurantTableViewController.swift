@@ -50,6 +50,7 @@ class RestaurantTableViewController: UITableViewController, NSFetchedResultsCont
         if let appDelegate = (UIApplication.shared.delegate as? AppDelegate) {
             let context = appDelegate.persistentContainer.viewContext
             fetchResultController = NSFetchedResultsController(fetchRequest: fetchRequest, managedObjectContext: context, sectionNameKeyPath: nil, cacheName: nil)
+            fetchResultController.delegate = self
         }
     }
     
