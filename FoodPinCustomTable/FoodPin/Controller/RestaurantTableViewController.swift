@@ -45,6 +45,7 @@ class RestaurantTableViewController: UITableViewController, NSFetchedResultsCont
     // Fetch data from data store
     
     let fetchRequest: NSFetchRequest<RestaurantMO> = RestaurantMO.fetchRequest()
+    let sortDescriptor = NSSortDescriptor(key: "name", ascending: true)
     
     // Update the method to verify the number of restaurant records
     
