@@ -40,12 +40,18 @@ class RestaurantTableViewController: UITableViewController, NSFetchedResultsCont
         
         tableView.backgroundView = emptyRestaurantView
         tableView.backgroundView?.isHidden = true
+        
+        // Fetch data from data store
+        
+        let fetchRequest: NSFetchRequest<RestaurantMO> = RestaurantMO.fetchRequest()
+        let sortDescriptor = NSSortDescriptor(key: "name", ascending: true)
+        fetchRequest.sortDescriptors = [sortDescriptor]
+        
+        if let appDelegate = (UIApplication.shared.delegate as? AppDelegate) {
+            let context = appDelegate.persistentContainer.viewContext
+            fetchResultController = NSFetchedResultsController(fetchRequest: fetchRequest, managedObjectContext: context, sectionNameKeyPath: nil, cacheName: nil)
+        }
     }
-    
-    // Fetch data from data store
-    
-    let fetchRequest: NSFetchRequest<RestaurantMO> = RestaurantMO.fetchRequest()
-    let sortDescriptor = NSSortDescriptor(key: "name", ascending: true)
     
     // Update the method to verify the number of restaurant records
     
