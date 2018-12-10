@@ -42,6 +42,10 @@ class RestaurantTableViewController: UITableViewController, NSFetchedResultsCont
         tableView.backgroundView?.isHidden = true
     }
     
+    // Fetch data from data store
+    
+    let fetchRequest: NSFetchRequest<RestaurantMO> = RestaurantMO.fetchRequest()
+    
     // Update the method to verify the number of restaurant records
     
     override func numberOfSections(in tableView: UITableView) -> Int {
