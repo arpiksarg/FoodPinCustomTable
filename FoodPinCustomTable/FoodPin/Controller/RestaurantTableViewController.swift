@@ -236,4 +236,11 @@ class RestaurantTableViewController: UITableViewController, NSFetchedResultsCont
             restaurants = fetchedObjects as! [RestaurantMO]
         }
     }
+    
+    // Telling the table view that we've completed the update 
+    
+    func controllerDidChangeContent(_ controller: NSFetchedResultsController<NSFetchRequestResult>) {
+        
+        tableView.endUpdates()
+    }
 }
