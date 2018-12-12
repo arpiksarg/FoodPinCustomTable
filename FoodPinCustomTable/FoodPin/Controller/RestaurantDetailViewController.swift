@@ -49,6 +49,10 @@ class RestaurantDetailViewController: UIViewController, UITableViewDataSource, U
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        if let rating = restaurant.rating {
+            headerView.ratingImageView.image = UIImage(named: rating)
+        }
+        
         navigationController?.hidesBarsOnSwipe = false
         
         navigationItem.largeTitleDisplayMode = .never
