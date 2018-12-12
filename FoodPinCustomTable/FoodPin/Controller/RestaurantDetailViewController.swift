@@ -26,6 +26,10 @@ class RestaurantDetailViewController: UIViewController, UITableViewDataSource, U
             self.restaurant.rating = rating
             self.headerView.ratingImageView.image = UIImage(named: rating)
             
+            if let appDelegate = (UIApplication.shared.delegate as? AppDelegate) {
+                appDelegate.saveContext()
+            }
+                
             // Added animation to ratingImageView
             
             let scaleTransform = CGAffineTransform.init(scaleX: 0.1, y: 0.1)
