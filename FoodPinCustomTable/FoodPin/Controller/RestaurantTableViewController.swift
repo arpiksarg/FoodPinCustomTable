@@ -114,15 +114,17 @@ class RestaurantTableViewController: UITableViewController, NSFetchedResultsCont
         return cell
     }
     
-
     override func tableView(_ tableView: UITableView, trailingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
         
         let deleteAction = UIContextualAction(style: .destructive, title: "Delete") { (action, sourceView, completionHandler) in
             
-            // Delete the row from the data source
-            
-            self.restaurants.remove(at: indexPath.row)
-            self.tableView.deleteRows(at: [indexPath], with: .fade)
+            if let appDelegate = (UIApplication.shared.delegate as? AppDelegate) {
+                    let context = appDelegate.persistentContainer.viewContext
+                let restaurantToDelete = self.fetchResultController.object(at: indexPath)
+                context.delete(restaurantToDelete)
+                
+                appDelegate.saveContext()
+            }
             
             // Call completion handler to dismiss the action button
             

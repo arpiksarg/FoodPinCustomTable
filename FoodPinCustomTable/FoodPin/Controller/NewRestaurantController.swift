@@ -146,16 +146,7 @@ class NewRestaurantController: UITableViewController, UITextFieldDelegate, UIIma
     //  MARK - Save Action (Exercise #2)
     
     @IBAction func saveButtonTapped(sender: AnyObject) {
-//        if (nameTextField.text?.isEmpty)! || (typeTextField.text?.isEmpty)! || (addressTextField.text?.isEmpty)! || (phoneTextField.text?.isEmpty)! || (descriptionTextView.text?.isEmpty)! {
-//
-//            let alertController = UIAlertController(title: "Error", message: "Please fill in all fields", preferredStyle: .alert)
-//            let alertAction = UIAlertAction(title: "OK", style: .default, handler: nil)
-//            alertController.addAction(alertAction)
-//            present(alertController, animated: true, completion: nil)
-//
-//            return
-//
-//        }
+
         dismiss(animated: true, completion: nil)
         
         if let appDelegate = (UIApplication.shared.delegate as? AppDelegate) {
@@ -164,7 +155,7 @@ class NewRestaurantController: UITableViewController, UITextFieldDelegate, UIIma
             restaurant.type = typeTextField.text
             restaurant.location = addressTextField.text
             restaurant.phone = phoneTextField.text
-            //restaurant.summary = descriptionTextView.text
+            restaurant.summary = descriptionTextView?.text
             restaurant.isVisited = false
             
             if let restaurantImage = photoImageView.image {
@@ -174,11 +165,5 @@ class NewRestaurantController: UITableViewController, UITextFieldDelegate, UIIma
             print("Saving data to context...")
             appDelegate.saveContext()
         }
-//        print("Name: \(nameTextField.text ?? "")")
-//        print("Type: \(typeTextField.text ?? "")")
-//        print("Location: \(addressTextField.text ?? "")")
-//        print("Phone: \(phoneTextField.text ?? "")")
-//        print("Description: \(descriptionTextView.text ?? "")")
-        
     }
 }
