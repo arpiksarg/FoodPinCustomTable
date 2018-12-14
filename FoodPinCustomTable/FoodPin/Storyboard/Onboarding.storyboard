@@ -31,17 +31,20 @@
                                     <segue destination="dfx-cU-vtM" kind="embed" id="VDy-q4-oeZ"/>
                                 </connections>
                             </containerView>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Slj-Y8-nyJ">
-                                <rect key="frame" x="67" y="519" width="240" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Slj-Y8-nyJ">
+                                <rect key="frame" x="0.0" y="450" width="375" height="217"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="FY3-gA-iCR" firstAttribute="trailing" secondItem="Hro-0E-UBy" secondAttribute="trailing" id="5IS-cF-Vzw"/>
+                            <constraint firstItem="Slj-Y8-nyJ" firstAttribute="top" secondItem="FY3-gA-iCR" secondAttribute="bottom" id="6Hg-u9-IOX"/>
+                            <constraint firstItem="Slj-Y8-nyJ" firstAttribute="trailing" secondItem="Hro-0E-UBy" secondAttribute="trailing" id="OIU-Xw-r5J"/>
+                            <constraint firstItem="Slj-Y8-nyJ" firstAttribute="leading" secondItem="Hro-0E-UBy" secondAttribute="leading" id="Q77-xc-PzG"/>
                             <constraint firstItem="FY3-gA-iCR" firstAttribute="leading" secondItem="Hro-0E-UBy" secondAttribute="leading" id="dGo-E9-gDV"/>
                             <constraint firstItem="FY3-gA-iCR" firstAttribute="top" secondItem="Vfv-3f-xgj" secondAttribute="top" id="gx5-lk-g7E"/>
+                            <constraint firstItem="Slj-Y8-nyJ" firstAttribute="bottom" secondItem="Hro-0E-UBy" secondAttribute="bottom" id="y37-Ff-jo1"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Hro-0E-UBy"/>
                     </view>
