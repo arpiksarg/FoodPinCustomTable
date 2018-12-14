@@ -30,11 +30,14 @@ class RestaurantTableViewController: UITableViewController, NSFetchedResultsCont
         super.viewDidLoad()
         
         searchController = UISearchController(searchResultsController: nil)
-        self.navigationItem.searchController = searchController
+        
+        // Replacing search bar from navigation bar to table view header
+        
+        tableView.tableHeaderView = searchController.searchBar
+        
         searchController.searchResultsUpdater = self
         searchController.dimsBackgroundDuringPresentation = false
        
-        
         navigationController?.hidesBarsOnSwipe = true
         
         tableView.cellLayoutMarginsFollowReadableWidth = true
