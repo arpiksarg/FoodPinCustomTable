@@ -28,6 +28,10 @@ class RestaurantTableViewController: UITableViewController, NSFetchedResultsCont
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        searchController = UISearchController(searchResultsController: nil)
+        self.navigationItem.searchController = searchController
+       
+        
         navigationController?.hidesBarsOnSwipe = true
         
         tableView.cellLayoutMarginsFollowReadableWidth = true
