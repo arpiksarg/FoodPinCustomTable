@@ -12,6 +12,7 @@ import CoreData
 class RestaurantTableViewController: UITableViewController, NSFetchedResultsControllerDelegate {
     
     var searchController: UISearchController!
+    var searchResults: [RestaurantMO] = []
     
     var fetchResultController: NSFetchedResultsController<RestaurantMO>!
     
