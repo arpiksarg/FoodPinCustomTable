@@ -29,10 +29,10 @@ class RestaurantTableViewController: UITableViewController, NSFetchedResultsCont
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        searchController.searchResultsUpdater = self
-        
         searchController = UISearchController(searchResultsController: nil)
         self.navigationItem.searchController = searchController
+        searchController.searchResultsUpdater = self
+        searchController.dimsBackgroundDuringPresentation = false
        
         
         navigationController?.hidesBarsOnSwipe = true
@@ -226,6 +226,16 @@ class RestaurantTableViewController: UITableViewController, NSFetchedResultsCont
                 
                 destinationController.restaurant = (searchController.isActive) ? searchResults[indexPath.row] : restaurants[indexPath.row]
             }
+        }
+    }
+    
+    // Disable delete and search buttons in the search results
+    
+    override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
+        if searchController.isActive {
+            return false
+        } else {
+            return true
         }
     }
     
