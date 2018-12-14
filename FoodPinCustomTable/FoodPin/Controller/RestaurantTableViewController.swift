@@ -103,6 +103,8 @@ class RestaurantTableViewController: UITableViewController, NSFetchedResultsCont
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
+        // determining which list to display(full or search result)
+        
         if searchController.isActive {
             return searchResults.count
         } else {
@@ -115,23 +117,25 @@ class RestaurantTableViewController: UITableViewController, NSFetchedResultsCont
         let cellIdentifier = "datacell"
         let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier, for: indexPath) as! RestaurantTableViewCell
         
+        // Determine if we get the restaurant form search result or the original arary
+        
+        let restaurant = (searchController.isActive) ? searchResults[indexPath.row] : restaurants[indexPath.row]
+        
         // Configure the cell...
         
-        cell.nameLabel.text = restaurants[indexPath.row].name
+        cell.nameLabel.text = restaurant.name
         
-        //cell.thumbnailImageView.image = UIImage(data: restaurantImage as Data)
-        
-        if let restaurantImage = restaurants[indexPath.row].image {
+        if let restaurantImage = restaurant.image {
             cell.thumbnailImageView.image = UIImage(data: restaurantImage as Data)
         }
         
-        cell.locationLabel.text = restaurants[indexPath.row].location
-        cell.typeLabel.text = restaurants[indexPath.row].type
+        cell.locationLabel.text = restaurant.location
+        cell.typeLabel.text = restaurant.type
         
         // checking if restaurant is visited.
         // If it is also change accessoryType property to prevent the bug
         
-        cell.heartImage.isHidden = restaurants[indexPath.row].isVisited ? false : true
+        cell.heartImage.isHidden = restaurant.isVisited ? false : true
         
         return cell
     }
