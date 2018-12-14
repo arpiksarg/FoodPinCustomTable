@@ -15,7 +15,7 @@
                 <pageViewController storyboardIdentifier="WalkthroughController" autoresizesArchivedViewToFullSize="NO" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="dfx-cU-vtM" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4gY-nm-XJL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-18" y="144"/>
+            <point key="canvasLocation" x="1465" y="142"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="btC-HS-3S4">
@@ -25,15 +25,19 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <containerView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="FY3-gA-iCR">
+                            <containerView opaque="NO" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="FY3-gA-iCR">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="450"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                                 <connections>
                                     <segue destination="dfx-cU-vtM" kind="embed" id="VDy-q4-oeZ"/>
                                 </connections>
                             </containerView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="FY3-gA-iCR" firstAttribute="trailing" secondItem="Hro-0E-UBy" secondAttribute="trailing" id="5IS-cF-Vzw"/>
+                            <constraint firstItem="FY3-gA-iCR" firstAttribute="leading" secondItem="Hro-0E-UBy" secondAttribute="leading" id="dGo-E9-gDV"/>
+                            <constraint firstItem="FY3-gA-iCR" firstAttribute="top" secondItem="Vfv-3f-xgj" secondAttribute="top" id="gx5-lk-g7E"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="Hro-0E-UBy"/>
                     </view>
                 </viewController>
