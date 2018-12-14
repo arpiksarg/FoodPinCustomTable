@@ -11,6 +11,8 @@ import CoreData
 
 class RestaurantTableViewController: UITableViewController, NSFetchedResultsControllerDelegate {
     
+    var searchController: UISearchController!
+    
     var fetchResultController: NSFetchedResultsController<RestaurantMO>!
     
     @IBOutlet var emptyRestaurantView: UIView!
