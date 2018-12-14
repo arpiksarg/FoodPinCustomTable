@@ -25,14 +25,14 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <containerView opaque="NO" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="FY3-gA-iCR">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="450"/>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FY3-gA-iCR">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="444.5"/>
                                 <connections>
                                     <segue destination="dfx-cU-vtM" kind="embed" id="VDy-q4-oeZ"/>
                                 </connections>
                             </containerView>
-                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Slj-Y8-nyJ">
-                                <rect key="frame" x="0.0" y="450" width="375" height="217"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Slj-Y8-nyJ">
+                                <rect key="frame" x="0.0" y="444.5" width="375" height="222.5"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
                         </subviews>
@@ -44,6 +44,7 @@
                             <constraint firstItem="Slj-Y8-nyJ" firstAttribute="leading" secondItem="Hro-0E-UBy" secondAttribute="leading" id="Q77-xc-PzG"/>
                             <constraint firstItem="FY3-gA-iCR" firstAttribute="leading" secondItem="Hro-0E-UBy" secondAttribute="leading" id="dGo-E9-gDV"/>
                             <constraint firstItem="FY3-gA-iCR" firstAttribute="top" secondItem="Vfv-3f-xgj" secondAttribute="top" id="gx5-lk-g7E"/>
+                            <constraint firstItem="Slj-Y8-nyJ" firstAttribute="height" secondItem="Vfv-3f-xgj" secondAttribute="height" multiplier="1 : 3" id="uZK-ai-7bN"/>
                             <constraint firstItem="Slj-Y8-nyJ" firstAttribute="bottom" secondItem="Hro-0E-UBy" secondAttribute="bottom" id="y37-Ff-jo1"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Hro-0E-UBy"/>
