@@ -11,16 +11,6 @@ import CoreData
 
 class RestaurantTableViewController: UITableViewController, NSFetchedResultsControllerDelegate, UISearchResultsUpdating {
     
-    //
-    
-    func updateSearchResults(for searchController: UISearchController) {
-        if let searchText = searchController.searchBar.text {
-            filterContent(for: searchText)
-            tableView.reloadData()
-        }
-    }
-    
-    
     var restaurants:[RestaurantMO] = []
     
     var searchController: UISearchController!
@@ -38,6 +28,8 @@ class RestaurantTableViewController: UITableViewController, NSFetchedResultsCont
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        searchController.searchResultsUpdater = self
         
         searchController = UISearchController(searchResultsController: nil)
         self.navigationItem.searchController = searchController
@@ -229,6 +221,9 @@ class RestaurantTableViewController: UITableViewController, NSFetchedResultsCont
         if segue.identifier == "showRestaurantDetail" {
             if let indexPath = tableView.indexPathForSelectedRow {
                 let destinationController = segue.destination as! RestaurantDetailViewController
+                
+                // checking search activity to pass currect resaurant
+                
                 destinationController.restaurant = (searchController.isActive) ? searchResults[indexPath.row] : restaurants[indexPath.row]
             }
         }
@@ -282,5 +277,12 @@ class RestaurantTableViewController: UITableViewController, NSFetchedResultsCont
             }
             return false
         })
+    }
+    
+    func updateSearchResults(for searchController: UISearchController) {
+        if let searchText = searchController.searchBar.text {
+            filterContent(for: searchText)
+            tableView.reloadData()
+        }
     }
 }
