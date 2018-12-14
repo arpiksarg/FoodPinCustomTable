@@ -33,7 +33,7 @@ class RestaurantTableViewController: UITableViewController, NSFetchedResultsCont
         // Replacing search bar from navigation bar to table view header
         
         tableView.tableHeaderView = searchController.searchBar
-        
+
         searchController.searchResultsUpdater = self
         searchController.dimsBackgroundDuringPresentation = false
         searchController.searchBar.placeholder = "Search Restaurants"
