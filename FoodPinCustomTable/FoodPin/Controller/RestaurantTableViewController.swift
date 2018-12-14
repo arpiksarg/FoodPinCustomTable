@@ -11,6 +11,8 @@ import CoreData
 
 class RestaurantTableViewController: UITableViewController, NSFetchedResultsControllerDelegate {
     
+    var restaurants:[RestaurantMO] = []
+    
     var searchController: UISearchController!
     var searchResults: [RestaurantMO] = []
     
@@ -21,8 +23,6 @@ class RestaurantTableViewController: UITableViewController, NSFetchedResultsCont
     @IBAction func unwindToHome(segue: UIStoryboardSegue) {
         dismiss(animated: true, completion: nil)
     }
-
-    var restaurants:[RestaurantMO] = []
     
     // MARK: - View controller life cycle
     
@@ -251,5 +251,17 @@ class RestaurantTableViewController: UITableViewController, NSFetchedResultsCont
     func controllerDidChangeContent(_ controller: NSFetchedResultsController<NSFetchRequestResult>) {
         
         tableView.endUpdates()
+    }
+    
+    // Filtering content
+    
+    func filterContent(for searchText: String) {
+        searchResults = restaurants.filter( { (restaurant) -> Bool in
+            if let name = restaurant.name {
+                let isMatch = name.localizedCaseInsensitiveContains(searchText)
+                return isMatch
+            }
+            return false
+        })
     }
 }
