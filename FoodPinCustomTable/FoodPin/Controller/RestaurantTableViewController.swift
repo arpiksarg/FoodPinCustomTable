@@ -12,10 +12,9 @@ import CoreData
 class RestaurantTableViewController: UITableViewController, NSFetchedResultsControllerDelegate, UISearchResultsUpdating {
     
     var restaurants:[RestaurantMO] = []
-    
-    var searchController: UISearchController!
     var searchResults: [RestaurantMO] = []
-    
+    var searchController: UISearchController!
+
     var fetchResultController: NSFetchedResultsController<RestaurantMO>!
     
     @IBOutlet var emptyRestaurantView: UIView!
@@ -37,7 +36,12 @@ class RestaurantTableViewController: UITableViewController, NSFetchedResultsCont
         
         searchController.searchResultsUpdater = self
         searchController.dimsBackgroundDuringPresentation = false
-       
+        searchController.searchBar.placeholder = "Search Restaurants"
+        searchController.searchBar.barTintColor = .white
+        searchController.searchBar.backgroundColor = .white
+        searchController.searchBar.tintColor = UIColor(red: 154, green: 154, blue: 154)
+        
+        
         navigationController?.hidesBarsOnSwipe = true
         
         tableView.cellLayoutMarginsFollowReadableWidth = true
