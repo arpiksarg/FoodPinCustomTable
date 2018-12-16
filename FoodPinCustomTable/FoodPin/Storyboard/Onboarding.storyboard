@@ -12,7 +12,9 @@
         <!--Page View Controller-->
         <scene sceneID="vZc-Fc-qvD">
             <objects>
-                <pageViewController storyboardIdentifier="WalkthroughController" autoresizesArchivedViewToFullSize="NO" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="dfx-cU-vtM" sceneMemberID="viewController"/>
+                <pageViewController storyboardIdentifier="WalkthroughController" autoresizesArchivedViewToFullSize="NO" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="dfx-cU-vtM" sceneMemberID="viewController">
+                    <size key="freeformSize" width="375" height="444.5"/>
+                </pageViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4gY-nm-XJL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1465" y="142"/>
@@ -22,12 +24,25 @@
             <objects>
                 <viewController id="1c9-lp-144" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="TwW-1F-fLb">
-                        <rect key="frame" x="0.0" y="0.0" width="451" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="451"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bo0-gT-p2p">
+                                <rect key="frame" x="24" y="20" width="327" height="229"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="HEADING" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nCX-cP-Wd0">
+                                <rect key="frame" x="150" y="274" width="79" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="8yc-aK-Dku"/>
                     </view>
-                    <size key="freeformSize" width="451" height="667"/>
+                    <size key="freeformSize" width="375" height="451"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wsL-Vt-opN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
