@@ -66,6 +66,11 @@
                         <viewLayoutGuide key="safeArea" id="8yc-aK-Dku"/>
                     </view>
                     <size key="freeformSize" width="375" height="451"/>
+                    <connections>
+                        <outlet property="contentImageVeiw" destination="bo0-gT-p2p" id="KCg-fB-DLY"/>
+                        <outlet property="headingLabel" destination="nCX-cP-Wd0" id="7PI-cN-d99"/>
+                        <outlet property="subheadingLabel" destination="IL6-Vx-iFU" id="6bW-qP-h3x"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wsL-Vt-opN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
