@@ -76,10 +76,10 @@
             </objects>
             <point key="canvasLocation" x="2228" y="143"/>
         </scene>
-        <!--View Controller-->
+        <!--Walkthrough View Controller-->
         <scene sceneID="btC-HS-3S4">
             <objects>
-                <viewController id="HT9-Ua-efx" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="WalkthroughViewController" id="HT9-Ua-efx" customClass="WalkthroughViewController" customModule="FoodPin" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Vfv-3f-xgj">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
