@@ -9,7 +9,11 @@
 import UIKit
 
 class WalkthroughViewController: UIViewController {
-
+    
+    // Property that stores a reference to the WalkthroughPageViewController object
+    
+    var walkthroughPageViewController: WalkthroughPageViewController?
+    
     @IBOutlet var pageControl: UIPageControl!
     @IBOutlet var nextButton: UIButton! {
         didSet {
@@ -27,5 +31,12 @@ class WalkthroughViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let destination = segue.destination
+        if let pageViewController = destination as? WalkthroughPageViewController {
+            walkthroughPageViewController = pageViewController
+        }
     }
 }
