@@ -74,4 +74,13 @@ class WalkthroughPageViewController: UIPageViewController, UIPageViewControllerD
         
         return nil
     }
+    
+    // Create the next content view controller
+    
+    func forwardPage() {
+        currentIndex += 1
+        if let nextViewController = contentViewController(at: currentIndex) {
+            setViewControllers([nextViewController], direction: .forward, animated: true, completion: nil)
+        }
+    }
 }
