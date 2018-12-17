@@ -55,4 +55,26 @@ class WalkthroughViewController: UIViewController {
             walkthroughPageViewController = pageViewController
         }
     }
+    
+    
+    // updateUI() method controls the title of the next button and skip button appearance
+    
+    func updateUI() {
+        if let index = walkthroughPageViewController?.currentIndex {
+            switch index {
+            case 0...1:
+                nextButton.setTitle("NEXT", for: .normal)
+                
+                skipButton.isHidden = false
+            
+            case 2:
+                nextButton.setTitle("GET STARTED", for: .normal)
+            
+            default: break
+            
+            }
+            
+            pageControl.currentPage = index
+        }
+    }
 }
