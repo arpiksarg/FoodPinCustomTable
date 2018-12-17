@@ -246,6 +246,16 @@ class RestaurantTableViewController: UITableViewController, NSFetchedResultsCont
         }
     }
     
+    // Bring up the walkthrough view controller
+    
+    override func viewDidAppear(_ animated: Bool) {
+        let storyboard = UIStoryboard(name: "Onboarding", bundle: nil)
+        if let walkthroughviewController = storyboard.instantiateViewController(withIdentifier: "WalkthroughViewController") as? WalkthroughViewController {
+            
+            present(walkthroughviewController, animated: true, completion: nil)
+        }
+    }
+    
     func controllerWillChangeContent(_ controller: NSFetchedResultsController<NSFetchRequestResult>) {
         tableView.beginUpdates()
     }
