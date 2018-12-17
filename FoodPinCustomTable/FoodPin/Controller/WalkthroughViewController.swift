@@ -58,6 +58,7 @@ class WalkthroughViewController: UIViewController {
     
     
     // updateUI() method controls the title of the next button and skip button appearance
+    // changes the indicator of the page control
     
     func updateUI() {
         if let index = walkthroughPageViewController?.currentIndex {
