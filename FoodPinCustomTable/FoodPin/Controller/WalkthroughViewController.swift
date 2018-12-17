@@ -28,10 +28,26 @@ class WalkthroughViewController: UIViewController {
         dismiss(animated: true, completion: nil)
     }
     
+    @IBAction func nextButtonTapped(sender: UIButton) {
+        if let index = walkthroughPageViewController?.currentIndex {
+            switch index {
+            case 0...1:
+                walkthroughPageViewController?.forwardPage()
+            case 2:
+                dismiss(animated: true, completion: nil)
+            default: break
+            }
+        }
+        
+        updateUI()
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
     }
+    
+    // Get the reference of the Walkthrough View Page Controller
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let destination = segue.destination
