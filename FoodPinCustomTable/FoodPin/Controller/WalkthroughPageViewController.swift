@@ -19,6 +19,8 @@ class WalkthroughPageViewController: UIPageViewController, UIPageViewControllerD
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        dataSource = self
     }
     
     func pageViewController(_ pageViewController: UIPageViewController, viewControllerBefore viewController: UIViewController) -> UIViewController? {
@@ -49,9 +51,9 @@ class WalkthroughPageViewController: UIPageViewController, UIPageViewControllerD
             return nil
         }
         
-        // Create a new view controller and pass suitable datal
+        // Create a new view controller and pass suitable data.
         
-        let storyboard = UIStoryboard(name: "Oboarding", bundle: nil)
+        let storyboard = UIStoryboard(name: "Onboarding", bundle: nil)
         if let pageContentViewController = storyboard.instantiateViewController(withIdentifier: "WalkthroughContentViewController") as? WalkthroughContentViewController {
             
             pageContentViewController.imageFile = pageImages[index]
