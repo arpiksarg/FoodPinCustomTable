@@ -20,6 +20,10 @@ class WalkthroughViewController: UIViewController {
     
     @IBOutlet var skipButton: UIButton!
     
+    @IBAction func skipButtonTapped(sender: UIButton) {
+        dismiss(animated: true, completion: nil)
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
