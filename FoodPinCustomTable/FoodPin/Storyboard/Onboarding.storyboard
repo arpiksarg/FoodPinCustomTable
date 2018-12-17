@@ -9,10 +9,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Page View Controller-->
+        <!--Walkthrough Page View Controller-->
         <scene sceneID="vZc-Fc-qvD">
             <objects>
-                <pageViewController storyboardIdentifier="WalkthroughController" autoresizesArchivedViewToFullSize="NO" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="dfx-cU-vtM" sceneMemberID="viewController">
+                <pageViewController storyboardIdentifier="WalkthroughPageViewController" autoresizesArchivedViewToFullSize="NO" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="dfx-cU-vtM" customClass="WalkthroughPageViewController" customModule="FoodPin" customModuleProvider="target" sceneMemberID="viewController">
                     <size key="freeformSize" width="375" height="444.5"/>
                 </pageViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4gY-nm-XJL" userLabel="First Responder" sceneMemberID="firstResponder"/>
