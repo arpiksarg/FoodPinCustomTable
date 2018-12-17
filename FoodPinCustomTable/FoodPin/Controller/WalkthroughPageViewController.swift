@@ -9,6 +9,21 @@
 import UIKit
 
 class WalkthroughPageViewController: UIPageViewController, UIPageViewControllerDataSource {
+   
+    func pageViewController(_ pageViewController: UIPageViewController, viewControllerBefore viewController: UIViewController) -> UIViewController? {
+        var index = (viewController as! WalkthroughContentViewController).index
+        index -= 1
+        
+        return contentViewController(at: index)
+    }
+    
+    func pageViewController(_ pageViewController: UIPageViewController, viewControllerAfter viewController: UIViewController) -> UIViewController? {
+        var index = (viewController as! WalkthroughContentViewController).index
+        index += 1
+        
+        return contentViewController(at: index)
+    }
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
