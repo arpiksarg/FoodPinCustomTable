@@ -142,6 +142,11 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Hro-0E-UBy"/>
                     </view>
+                    <connections>
+                        <outlet property="nextButton" destination="34I-1f-ReZ" id="DE3-l7-KtH"/>
+                        <outlet property="pageControl" destination="dHX-YZ-LxT" id="pXB-Ej-7gi"/>
+                        <outlet property="skipButton" destination="xkI-f3-xUu" id="s25-bT-qBC"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wRW-zN-pLU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
