@@ -8,7 +8,7 @@
 
 import UIKit
 
-class WalkthroughPageViewController: UIPageViewController {
+class WalkthroughPageViewController: UIPageViewController, UIPageViewControllerDataSource {
 
     override func viewDidLoad() {
         super.viewDidLoad()
