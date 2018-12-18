@@ -30,6 +30,10 @@ class WalkthroughViewController: UIViewController, WalkthroughPageViewController
     @IBOutlet var skipButton: UIButton!
     
     @IBAction func skipButtonTapped(sender: UIButton) {
+        
+        // 
+        
+        UserDefaults.standard.set(true, forKey: "hasViewedWalkthrough")
         dismiss(animated: true, completion: nil)
     }
     
