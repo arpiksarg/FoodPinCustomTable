@@ -8,7 +8,12 @@
 
 import UIKit
 
-class WalkthroughViewController: UIViewController {
+class WalkthroughViewController: UIViewController, WalkthroughPageViewControllerDelgate {
+   
+    func didUpdatePageIndex(currentIndex: Int) {
+        updateUI()
+    }
+    
     
     // Property that stores a reference to the WalkthroughPageViewController object
     
