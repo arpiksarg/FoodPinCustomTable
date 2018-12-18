@@ -12,7 +12,7 @@ protocol WalkthroughPageViewControllerDelgate: class {
     func didUpdatePageIndex(currentIndex: Int)
 }
 
-class WalkthroughPageViewController: UIPageViewController, UIPageViewControllerDataSource {
+class WalkthroughPageViewController: UIPageViewController, UIPageViewControllerDataSource, UIPageViewControllerDelegate {
    
     var pageHeadings = ["CREATE YOUR OWN FOOD GUIDE", "SHOW YOU THE LOCATION", "DISCOVER GREAT RESTAURANTS"]
     var pageImages = ["onboarding-1", "onboarding-2", "onboarding-3"]
