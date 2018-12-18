@@ -89,4 +89,21 @@ class WalkthroughPageViewController: UIPageViewController, UIPageViewControllerD
             setViewControllers([nextViewController], direction: .forward, animated: true, completion: nil)
         }
     }
+    
+    // Implementing didFinishAnimating method to check the transition is completed.
+    
+    func pageViewController(_ pageViewController: UIPageViewController, didFinishAnimating finished: Bool, previousViewControllers: [UIViewController], transitionCompleted completed: Bool) {
+        if completed {
+            if let contentViewController = pageViewController.viewControllers?.first as? WalkthroughContentViewController {
+                
+                // Find out the current page index.
+                
+                currentIndex = contentViewController.index
+                
+                // Inform the delegate 
+                
+                walkthroughDelegate?.didUpdatePageIndex(currentIndex: contentViewController.index)
+            }
+        }
+    }
 }
