@@ -30,6 +30,10 @@ class WalkthroughPageViewController: UIPageViewController, UIPageViewControllerD
         
         dataSource = self
         
+        // Assign the delegate of the UIPageViewControllerDelegate protocol.
+        
+        delegate = self
+        
         // Create the first walkthrough screen
         
         if let startingViewController = contentViewController(at: 0) {
@@ -100,7 +104,7 @@ class WalkthroughPageViewController: UIPageViewController, UIPageViewControllerD
                 
                 currentIndex = contentViewController.index
                 
-                // Inform the delegate 
+                // Inform the delegate
                 
                 walkthroughDelegate?.didUpdatePageIndex(currentIndex: contentViewController.index)
             }
