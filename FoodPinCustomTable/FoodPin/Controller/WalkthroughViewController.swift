@@ -70,6 +70,7 @@ class WalkthroughViewController: UIViewController {
             
             case 2:
                 nextButton.setTitle("GET STARTED", for: .normal)
+                skipButton.isHidden = true
             
             default: break
             

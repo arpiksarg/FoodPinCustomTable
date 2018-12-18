@@ -8,6 +8,10 @@
 
 import UIKit
 
+protocol WalkthroughPageViewControllerDelgate: class {
+    func didUpdatePageIndex(currentIndex: Int)
+}
+
 class WalkthroughPageViewController: UIPageViewController, UIPageViewControllerDataSource {
    
     var pageHeadings = ["CREATE YOUR OWN FOOD GUIDE", "SHOW YOU THE LOCATION", "DISCOVER GREAT RESTAURANTS"]
