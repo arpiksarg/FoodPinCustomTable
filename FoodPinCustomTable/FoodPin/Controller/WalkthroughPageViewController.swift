@@ -21,6 +21,8 @@ class WalkthroughPageViewController: UIPageViewController, UIPageViewControllerD
                            "Find restaurants shared by your friends and other foodies"]
     var currentIndex = 0
     
+    weak var walkthroughDelegate: WalkthroughPageViewControllerDelgate?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
