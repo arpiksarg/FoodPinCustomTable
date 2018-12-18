@@ -39,6 +39,11 @@ class WalkthroughViewController: UIViewController, WalkthroughPageViewController
             case 0...1:
                 walkthroughPageViewController?.forwardPage()
             case 2:
+                
+                // Store a status in the user defaults
+                
+                UserDefaults.standard.set(true, forKey: "hasViewedWalkthrough")
+                
                 dismiss(animated: true, completion: nil)
             default: break
             }
@@ -58,9 +63,12 @@ class WalkthroughViewController: UIViewController, WalkthroughPageViewController
         let destination = segue.destination
         if let pageViewController = destination as? WalkthroughPageViewController {
             walkthroughPageViewController = pageViewController
+            
+            //
+            
+            walkthroughPageViewController?.walkthroughDelegate = self
         }
     }
-    
     
     // updateUI() method controls the title of the next button and skip button appearance
     // changes the indicator of the page control
