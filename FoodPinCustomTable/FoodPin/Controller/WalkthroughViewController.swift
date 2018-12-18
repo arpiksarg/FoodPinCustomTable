@@ -31,9 +31,10 @@ class WalkthroughViewController: UIViewController, WalkthroughPageViewController
     
     @IBAction func skipButtonTapped(sender: UIButton) {
         
-        // 
+        // Store a status in the user defaults when Skip button is tapped.
         
         UserDefaults.standard.set(true, forKey: "hasViewedWalkthrough")
+       
         dismiss(animated: true, completion: nil)
     }
     
@@ -44,7 +45,7 @@ class WalkthroughViewController: UIViewController, WalkthroughPageViewController
                 walkthroughPageViewController?.forwardPage()
             case 2:
                 
-                // Store a status in the user defaults
+                // Store a status in the user defaults.
                 
                 UserDefaults.standard.set(true, forKey: "hasViewedWalkthrough")
                 

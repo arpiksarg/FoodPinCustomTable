@@ -249,6 +249,13 @@ class RestaurantTableViewController: UITableViewController, NSFetchedResultsCont
     // Bring up the walkthrough view controller
     
     override func viewDidAppear(_ animated: Bool) {
+        
+        // Retrieve the hasViewedWalkthrough key from the user defaults and check its value
+
+        if UserDefaults.standard.bool(forKey: "hasViewedWalkthrough") {
+            return
+        }
+        
         let storyboard = UIStoryboard(name: "Onboarding", bundle: nil)
         if let walkthroughviewController = storyboard.instantiateViewController(withIdentifier: "WalkthroughViewController") as? WalkthroughViewController {
             
