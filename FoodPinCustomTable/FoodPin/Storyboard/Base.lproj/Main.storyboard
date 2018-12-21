@@ -864,11 +864,11 @@
             </objects>
             <point key="canvasLocation" x="-60" y="1061"/>
         </scene>
-        <!--Item-->
+        <!--Navigation Controller-->
         <scene sceneID="nNh-4L-PEC">
             <objects>
                 <navigationController id="p3w-HH-ioT" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="aQX-qm-Qvc"/>
+                    <tabBarItem key="tabBarItem" systemItem="recents" id="aQX-qm-Qvc"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="UB0-sh-1sS">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
