@@ -69,9 +69,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <wkWebView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cMG-kK-B0L">
-                                <rect key="frame" x="67" y="158" width="240" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cMG-kK-B0L">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <wkWebViewConfiguration key="configuration">
                                     <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
@@ -80,12 +79,18 @@
                             </wkWebView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="cMG-kK-B0L" firstAttribute="trailing" secondItem="vL2-Ei-TLl" secondAttribute="trailing" id="31c-7H-b68"/>
+                            <constraint firstItem="cMG-kK-B0L" firstAttribute="leading" secondItem="vL2-Ei-TLl" secondAttribute="leading" id="TPA-dn-920"/>
+                            <constraint firstItem="cMG-kK-B0L" firstAttribute="top" secondItem="iaB-EC-cRL" secondAttribute="top" id="oZm-tp-NfX"/>
+                            <constraint firstItem="cMG-kK-B0L" firstAttribute="bottom" secondItem="vL2-Ei-TLl" secondAttribute="bottom" id="zc1-2s-ARo"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="vL2-Ei-TLl"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7kz-6L-kob" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="643" y="1831"/>
+            <point key="canvasLocation" x="642.39999999999998" y="1830.1349325337333"/>
         </scene>
         <!--About-->
         <scene sceneID="NQO-XJ-3le">
