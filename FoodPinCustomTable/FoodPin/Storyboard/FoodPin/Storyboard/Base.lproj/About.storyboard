@@ -56,6 +56,9 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="About" id="gZd-n7-5zR"/>
+                    <connections>
+                        <segue destination="zx1-L7-pdM" kind="show" id="hj7-jm-TBB"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kKx-iQ-m98" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -90,7 +93,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7kz-6L-kob" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="642.39999999999998" y="1830.1349325337333"/>
+            <point key="canvasLocation" x="759" y="1836"/>
         </scene>
         <!--About-->
         <scene sceneID="NQO-XJ-3le">
