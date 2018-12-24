@@ -64,10 +64,10 @@
             </objects>
             <point key="canvasLocation" x="-60" y="1836"/>
         </scene>
-        <!--View Controller-->
+        <!--Web View Controller-->
         <scene sceneID="1ty-Nq-Mow">
             <objects>
-                <viewController id="zx1-L7-pdM" sceneMemberID="viewController">
+                <viewController id="zx1-L7-pdM" customClass="WebViewController" customModule="FoodPin" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="iaB-EC-cRL">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -90,6 +90,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="vL2-Ei-TLl"/>
                     </view>
+                    <connections>
+                        <outlet property="webView" destination="cMG-kK-B0L" id="C9X-6A-wrZ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7kz-6L-kob" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
