@@ -57,7 +57,7 @@
                     </tableView>
                     <navigationItem key="navigationItem" title="About" id="gZd-n7-5zR"/>
                     <connections>
-                        <segue destination="zx1-L7-pdM" kind="show" id="hj7-jm-TBB"/>
+                        <segue destination="zx1-L7-pdM" kind="show" identifier="showWebView" id="hj7-jm-TBB"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kKx-iQ-m98" userLabel="First Responder" sceneMemberID="firstResponder"/>
