@@ -38,6 +38,20 @@ class AboutTableTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
         return sectionTitles[section]
     }
+    
+    // Set the text label and return the cell
+    
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "AboutCell", for: indexPath)
+
+        // Configure the cell..
+
+        let cellData = sectionContent[indexPath.section][indexPath.row]
+        cell.textLabel?.text = cellData.text
+        cell.imageView?.image = UIImage(named: cellData.image)
+
+        return cell
+    }
 
     /*
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
