@@ -33,6 +33,7 @@
 		E2BF261D21A454EE00946387 /* NavigationControllerExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2BF261C21A454EE00946387 /* NavigationControllerExt.swift */; };
 		E2CEB7FA21A6B53C006B4947 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E2CEB7F921A6B53C006B4947 /* MapKit.framework */; };
 		E2CF67B121A98903007AF49F /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2CF67B021A98903007AF49F /* MapViewController.swift */; };
+		E2D78A1D21D1160200EA9668 /* AboutTableTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2D78A1C21D1160200EA9668 /* AboutTableTableViewController.swift */; };
 		E2F3322D21D0EB0A007F3F8E /* About.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E2F3322B21D0EB0A007F3F8E /* About.storyboard */; };
 		E2F3322F21D0EBCC007F3F8E /* Discover.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E2F3322E21D0EBCC007F3F8E /* Discover.storyboard */; };
 		E2FBBAC521AC3F9100410C33 /* ReviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2FBBAC421AC3F9100410C33 /* ReviewViewController.swift */; };
@@ -73,6 +74,7 @@
 		E2BF261C21A454EE00946387 /* NavigationControllerExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationControllerExt.swift; sourceTree = "<group>"; };
 		E2CEB7F921A6B53C006B4947 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		E2CF67B021A98903007AF49F /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		E2D78A1C21D1160200EA9668 /* AboutTableTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutTableTableViewController.swift; sourceTree = "<group>"; };
 		E2F3322C21D0EB0A007F3F8E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = FoodPin/Storyboard/Base.lproj/About.storyboard; sourceTree = "<group>"; };
 		E2F3322E21D0EBCC007F3F8E /* Discover.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Discover.storyboard; sourceTree = "<group>"; };
 		E2FBBAC421AC3F9100410C33 /* ReviewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewViewController.swift; sourceTree = "<group>"; };
@@ -120,6 +122,7 @@
 				E28B74B421C6CE9F00E100F9 /* WalkthroughContentViewController.swift */,
 				E28B74B621C79F3300E100F9 /* WalkthroughPageViewController.swift */,
 				E28B74B821C7A98100E100F9 /* WalkthroughViewController.swift */,
+				E2D78A1C21D1160200EA9668 /* AboutTableTableViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -331,6 +334,7 @@
 				F44705AE211AF99E002E0327 /* AppDelegate.swift in Sources */,
 				E2B2A68621A6C113005222C0 /* RestaurantDetailSeparatorCell.swift in Sources */,
 				E28B74B521C6CE9F00E100F9 /* WalkthroughContentViewController.swift in Sources */,
+				E2D78A1D21D1160200EA9668 /* AboutTableTableViewController.swift in Sources */,
 				E2BF261D21A454EE00946387 /* NavigationControllerExt.swift in Sources */,
 				E203DCE821B148E700717023 /* NewRestaurantController.swift in Sources */,
 				E28B74B721C79F3300E100F9 /* WalkthroughPageViewController.swift in Sources */,
