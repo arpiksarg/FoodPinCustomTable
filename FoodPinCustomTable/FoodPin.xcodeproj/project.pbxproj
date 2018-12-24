@@ -149,6 +149,8 @@
 		E251762A219D781300D89C52 /* Storyboard */ = {
 			isa = PBXGroup;
 			children = (
+				E2F3322E21D0EBCC007F3F8E /* Discover.storyboard */,
+				E2F3322B21D0EB0A007F3F8E /* About.storyboard */,
 				F44705B1211AF99E002E0327 /* Main.storyboard */,
 				F44705B6211AF99F002E0327 /* LaunchScreen.storyboard */,
 				E286DF0021C3F6C800CE37F6 /* Onboarding.storyboard */,
@@ -192,8 +194,6 @@
 		F44705A1211AF99D002E0327 = {
 			isa = PBXGroup;
 			children = (
-				E2F3322E21D0EBCC007F3F8E /* Discover.storyboard */,
-				E2F3322B21D0EB0A007F3F8E /* About.storyboard */,
 				F44705AC211AF99E002E0327 /* FoodPin */,
 				F44705AB211AF99E002E0327 /* Products */,
 				E2CEB7F821A6B53C006B4947 /* Frameworks */,
