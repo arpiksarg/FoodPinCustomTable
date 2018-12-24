@@ -8,7 +8,7 @@
 
 import UIKit
 
-class AboutTableTableViewController: UITableViewController {
+class AboutTableViewController: UITableViewController {
     
     var sectionTitles = ["Feedback", "Follow us"]
     var sectionContent = [[(image: "store", text: "Rate us on App Store", link: "https://www.apple.com/itunes/charts/paid-apps/"),
@@ -84,6 +84,8 @@ class AboutTableTableViewController: UITableViewController {
                 if let url = URL(string: link) {
                     UIApplication.shared.open(url)
                 }
+            } else if indexPath.row == 1 {
+                performSegue(withIdentifier: "showWebView", sender: self)
             }
         default:
             break
