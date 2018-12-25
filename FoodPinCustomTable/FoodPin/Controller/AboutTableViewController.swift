@@ -93,4 +93,15 @@ class AboutTableViewController: UITableViewController {
         
         tableView.deselectRow(at: indexPath, animated: false)
     }
+    
+    // Find out the link of the selected item and pass it to the web view controller
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "showWebView" {
+            if let destinationController = segue.destination as? WebViewController,
+                let indexPath = tableView.indexPathForSelectedRow {
+                destinationController.targetURL = sectionContent[indexPath.section][indexPath.row].link
+            }
+        }
+    }
 }
