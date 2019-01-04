@@ -173,7 +173,6 @@ class RestaurantTableViewController: UITableViewController, NSFetchedResultsCont
             } else {
              
                 activityController = UIActivityViewController(activityItems: [defaultText], applicationActivities: nil)
-           
             }
             
             if let popoverController = activityController.popoverPresentationController {

@@ -44,7 +44,7 @@ class NewRestaurantController: UITableViewController, UITextFieldDelegate, UIIma
         }
     }
     
-    @IBOutlet var descriptionTextView: IndentedTextField! {
+    @IBOutlet var descriptionTextView: UITextView! {
         didSet {
             descriptionTextView.tag = 5
             descriptionTextView.layer.cornerRadius = 5.0
@@ -155,7 +155,7 @@ class NewRestaurantController: UITableViewController, UITextFieldDelegate, UIIma
             restaurant.type = typeTextField.text
             restaurant.location = addressTextField.text
             restaurant.phone = phoneTextField.text
-            restaurant.summary = descriptionTextView?.text
+            restaurant.summary = descriptionTextView.text
             restaurant.isVisited = false
             
             if let restaurantImage = photoImageView.image {
